@@ -1,3 +1,17 @@
 # Dependency directories
 node_modules/
 jspm_packages/
+
+#IDE/Editor-specific files
+.vscode/
+.idea/
+.vs/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+*.backup
+*.tmp
