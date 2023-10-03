@@ -19,6 +19,8 @@ Noora Vainionpää <noora.t.vainionpaa@tuni.fi>
 
 ## License
 
+Copyright (c) 2023 Jenny Myllymaa, Teemu Tontti, Mikko Pasanen, Noora Vainionpää
+
 This project is under the MIT Licence
 
 ## Contact
