@@ -6,6 +6,12 @@ This project is focused on version control and learning how to work in team proj
 
 Alongside learning git, this project is also for learning programming by implementing a simple weather app.
 
+## License
+
+Copyright (c) 2023 Jenny Myllymaa, Teemu Tontti, Mikko Pasanen, Noora Vainionpää
+
+This project is under the MIT License
+
 ## Authors
 
 Jenny Myllymaa <jenny.i.myllymaa@tuni.fi>
@@ -17,11 +23,6 @@ Noora Vainionpää <noora.t.vainionpaa@tuni.fi>
 
 ## Usage
 
-## License
-
-Copyright (c) 2023 Jenny Myllymaa, Teemu Tontti, Mikko Pasanen, Noora Vainionpää
-
-This project is under the MIT License
 
 ## Contact
 
