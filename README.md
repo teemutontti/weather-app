@@ -9,7 +9,7 @@ Alongside learning git, this project is also for learning programming by impleme
 ## Authors
 
 Jenny Myllymaa <jenny.i.myllymaa@tuni.fi>
-Teemu Tontti
+Teemu Tontti <teemu.tontti@tuni.fi>
 Mikko Pasanen <mikko.pasanen@tuni.fi>
 Noora Vainionpää <noora.t.vainionpaa@tuni.fi>
 
