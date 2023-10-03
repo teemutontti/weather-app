@@ -19,6 +19,8 @@ Noora Vainionpää <noora.t.vainionpaa@tuni.fi>
 
 ## License
 
+This project is under the MIT Licence
+
 ## Contact
 
 If you have any questions or feedback, feel free to reach out to us:
