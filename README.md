@@ -4,6 +4,8 @@
 
 This project is focused on version control and learning how to work in team projects using Git.
 
+Alongside learning git, this project is also for learning programming by implementing a simple weather app.
+
 ## Authors
 
 Jenny Myllymaa <jenny.i.myllymaa@tuni.fi>
