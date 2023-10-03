@@ -1,4 +1,4 @@
-# School project for version control.
+# Weather App
 
 ## Description
 
