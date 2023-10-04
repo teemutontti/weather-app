@@ -22,9 +22,3 @@ Noora Vainionpää <noora.t.vainionpaa@tuni.fi>
 ## Table of Contents
 
 ## Usage
-
-
-## Contact
-
-If you have any questions or feedback, feel free to reach out to us:
-Project Manager: Teemu Tontti <teemu.tontti@tuni.fi>
