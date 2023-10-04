@@ -14,10 +14,10 @@ This project is under the MIT License
 
 ## Authors
 
-Teemu Tontti (Project manager) <teemu.tontti@tuni.fi>
-Jenny Myllymaa <jenny.i.myllymaa@tuni.fi>
-Mikko Pasanen <mikko.pasanen@tuni.fi>
-Noora Vainionpää <noora.t.vainionpaa@tuni.fi>
+Teemu Tontti (Project manager) <teemu.tontti@tuni.fi> <br>
+Jenny Myllymaa <jenny.i.myllymaa@tuni.fi> <br>
+Mikko Pasanen <mikko.pasanen@tuni.fi> <br>
+Noora Vainionpää <noora.t.vainionpaa@tuni.fi> <br>
 
 ## Table of Contents
 
