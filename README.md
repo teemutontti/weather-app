@@ -1,4 +1,4 @@
-# Weather App
+# Weather App🌤️
 
 ## Description
 
@@ -14,17 +14,11 @@ This project is under the MIT License
 
 ## Authors
 
+Teemu Tontti (Project manager) <teemu.tontti@tuni.fi>
 Jenny Myllymaa <jenny.i.myllymaa@tuni.fi>
-Teemu Tontti <teemu.tontti@tuni.fi>
 Mikko Pasanen <mikko.pasanen@tuni.fi>
 Noora Vainionpää <noora.t.vainionpaa@tuni.fi>
 
 ## Table of Contents
 
 ## Usage
-
-
-## Contact
-
-If you have any questions or feedback, feel free to reach out to us:
-Project Manager: Teemu Tontti <teemu.tontti@tuni.fi>
