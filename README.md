@@ -8,6 +8,9 @@ Alongside learning Git, this project is also for learning programming by impleme
 
 ## Features
 
+- Real-time weather data retrieval
+- User-friendly interface
+
 ## License
 
 Copyright (c) 2023 Jenny Myllymaa, Teemu Tontti, Mikko Pasanen, Noora Vainionpää
