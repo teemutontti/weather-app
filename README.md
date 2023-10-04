@@ -24,6 +24,4 @@ Jenny Myllymaa <jenny.i.myllymaa@tuni.fi> <br>
 Mikko Pasanen <mikko.pasanen@tuni.fi> <br>
 Noora Vainionpää <noora.t.vainionpaa@tuni.fi> <br>
 
-## Table of Contents
-
 ## Usage
