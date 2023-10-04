@@ -11,6 +11,8 @@ Alongside learning Git, this project is also for learning programming by impleme
 - Real-time weather data retrieval
 - User-friendly interface
 
+## Usage
+
 ## License
 
 Copyright (c) 2023 Jenny Myllymaa, Teemu Tontti, Mikko Pasanen, Noora Vainionpää
@@ -23,5 +25,3 @@ Teemu Tontti (Project manager) <teemu.tontti@tuni.fi> <br>
 Jenny Myllymaa <jenny.i.myllymaa@tuni.fi> <br>
 Mikko Pasanen <mikko.pasanen@tuni.fi> <br>
 Noora Vainionpää <noora.t.vainionpaa@tuni.fi> <br>
-
-## Usage
