@@ -13,6 +13,9 @@ Alongside learning Git, this project is also for learning programming by impleme
 
 ## Usage
 
+- Can be used to check daily weather.
+- Also shows forecasts for the following 2 days.
+
 ## License
 
 Copyright (c) 2023 Jenny Myllymaa, Teemu Tontti, Mikko Pasanen, Noora Vainionpää
