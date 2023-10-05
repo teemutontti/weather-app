@@ -8,14 +8,11 @@ Alongside learning Git, this project is also for learning programming by impleme
 
 ## Features
 
+- Can be used to check daily weather.
+- Also shows forecasts for the following 2 days.
 - Real-time weather data retrieval
 - User-friendly interface
 - Worldwide weather info
-
-## Usage
-
-- Can be used to check daily weather.
-- Also shows forecasts for the following 2 days.
 
 ## Copyright
 
