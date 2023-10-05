@@ -20,8 +20,6 @@ Alongside learning Git, this project is also for learning programming by impleme
 
 Copyright (c) 2023 Jenny Myllymaa, Teemu Tontti, Mikko Pasanen, Noora Vainionpää
 
-This project is under the MIT License
-
 ## Authors
 
 Teemu Tontti (Project manager) <teemu.tontti@tuni.fi> <br>
