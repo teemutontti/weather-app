@@ -1,6 +1,6 @@
 # Weather App🌤️
 
-![Man with umbrella in a ready weather.](weatherpicture.PNG)
+[//]: <> (![Man with umbrella in a ready weather.](weatherpicture.PNG))
 
 ## Description
 
