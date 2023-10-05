@@ -10,19 +10,15 @@ Alongside learning Git, this project is also for learning programming by impleme
 
 ## Features
 
-- Real-time weather data retrieval
-- User-friendly interface
-
-## Usage
-
 - Can be used to check daily weather.
 - Also shows forecasts for the following 2 days.
+- Real-time weather data retrieval
+- User-friendly interface
+- Worldwide weather info
 
-## License
+## Copyright
 
 Copyright (c) 2023 Jenny Myllymaa, Teemu Tontti, Mikko Pasanen, Noora Vainionpää
-
-This project is under the MIT License
 
 ## Authors
 
