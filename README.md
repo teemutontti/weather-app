@@ -1,8 +1,6 @@
 # Weather App🌤️
 
-<p align="right">
-    <img src="weatherpicture.PNG">
-</p>
+<img src="weatherpicture.PNG">
 
 ## Description
 
