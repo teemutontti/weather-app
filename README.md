@@ -10,6 +10,7 @@ Alongside learning Git, this project is also for learning programming by impleme
 
 - Real-time weather data retrieval
 - User-friendly interface
+- Worldwide weather info
 
 ## Usage
 
