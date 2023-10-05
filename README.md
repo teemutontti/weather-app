@@ -1,5 +1,9 @@
 # Weather App🌤️
 
+<p align="right">
+    <img src="weatherpicture.PNG">
+</p>
+
 [//]: <> (![Man with umbrella in a ready weather.](weatherpicture.PNG))
 
 ## Description
