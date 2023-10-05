@@ -4,8 +4,6 @@
     <img src="weatherpicture.PNG">
 </p>
 
-[//]: <> (![Man with umbrella in a ready weather.](weatherpicture.PNG))
-
 ## Description
 
 This is a school project that is focused on version control and learning how to work in team projects using Git.
