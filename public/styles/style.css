@@ -1,3 +1,8 @@
 body {
-  background-color: beige;
+  background-color: rgb(180, 98, 42);
+}
+
+header {
+  font: Helvetica, sans-serif;
+  font-size: 28px;
 }/*# sourceMappingURL=style.css.map */
