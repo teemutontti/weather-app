@@ -2,9 +2,14 @@ $backgroud-color: rgb(180, 98, 42);
 $font-color: blue;
 $header-font: Helvetica, sans-serif;
 $header-font-size: 28px;
-$base-font: Helvetica, sans-serif;
-$base-font-size: 18px;
+$base-font: Arial, sans-serif;
+$base-font-size: 14px;
 
 body {
   background-color: beige;
+}
+
+header {
+  font: $header-font;
+  font-size: $header-font-size;
 }
