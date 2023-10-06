@@ -1,7 +1,0 @@
-# START OF FILE
-
-
-# DESCRIPTION
-This file is a dummy file which will be deleted later.
-
-# END OF FILE
