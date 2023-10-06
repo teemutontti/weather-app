@@ -2,9 +2,11 @@
 
 body {
   background-color: $backgroud-color;
+  color: $base-font-color;
 }
 
 header {
   font: $header-font;
   font-size: $header-font-size;
+  color: $header-font-color;
 }
