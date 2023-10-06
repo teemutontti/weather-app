@@ -8,3 +8,7 @@ $base-font-size: 14px;
 body {
   background-color: beige;
 }
+
+header {
+  font: $header-font;
+}
