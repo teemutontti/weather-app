@@ -1,6 +1,6 @@
-//Function for fetching info from html input
+//Function for fetching info from html input <-- undefined
 
-//Function for fetching weather
+//Function for fetching weather <-- Mikko
 async function fetchWeather(city) {
   const apiKey = "e15e748acfc2424f9df135245232809";
   let url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`;
@@ -9,10 +9,10 @@ async function fetchWeather(city) {
   return hr;
 }
 
-//Function for parseing fetched data
+//Function for parseing fetched data <-- Noora
 
-//Function for returning current weather to html
+//Function for returning current weather to html <-- Jenny
 
-//Function for returning tomorrows weather to html
+//Function for returning tomorrows weather to html <-- Teemu
 
-//Function for returning day after tomorrows weather to html
+//Function for returning day after tomorrows weather to html <-- Teemu
