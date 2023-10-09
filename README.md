@@ -8,6 +8,8 @@ This is a school project that is focused on version control and learning how to 
 
 Alongside learning Git, this project is also for learning programming by implementing a simple weather app.
 
+In this project we use weather data from https://www.weatherapi.com/.
+
 ## Features
 
 - Can be used to check daily weather.
