@@ -7,19 +7,19 @@ async function fetchWeather(city) {
 
   let hr = await fetch(url);
   let data = await hr.json();  // Parse data to json Author: Noora
-  return data; 
+  
+  return data;
+
 
 }
 
 //Function for parseing fetched data <-- Noora
 function parsedData (data) {
-  let dataArr = []
+  let currentDay = data.forecast.forecastday[0];
+  let nextDay = data.forecast.forecastday[1];
+  let secondDay = data.forecast.forecastday[2];
 
-  dataArr.push(data.location.name);
-  dataArr.push(data.location.country);
-  dataArr.push(data.current.temp_c);
-
-  return dataArr;
+  return [currentDay, nextDay, secondDay];
 
 }
 
