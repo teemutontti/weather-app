@@ -6,7 +6,9 @@ async function fetchWeather(city) {
   let url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`;
 
   let hr = await fetch(url);
-  return hr;
+  let data = await hr.json();  // Parse data to json Author: Noora
+  return data; 
+
 }
 
 //Function for parseing fetched data <-- Noora
