@@ -7,8 +7,9 @@ async function fetchWeather(city) {
 
   let hr = await fetch(url);
   let data = await hr.json();  // Parse data to json Author: Noora
-  
-  return data;
+  let dataArr = await parsedData(data); // Parse data to array Author: Noora
+
+  return dataArr;
 
 
 }
