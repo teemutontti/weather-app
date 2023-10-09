@@ -15,11 +15,11 @@ async function fetchWeather(city) {
 
 //Function for parseing fetched data <-- Noora
 function parsedData (data) {
-  let currentDay = data.forecast.forecastday[0];
-  let nextDay = data.forecast.forecastday[1];
-  let secondDay = data.forecast.forecastday[2];
+  let today = data.forecast.forecastday[0];
+  let tomorrow = data.forecast.forecastday[1];
+  let dayAfter = data.forecast.forecastday[2];
 
-  return [currentDay, nextDay, secondDay];
+  return [today, tomorrow, dayAfter];
 
 }
 
