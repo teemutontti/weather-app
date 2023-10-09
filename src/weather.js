@@ -31,5 +31,8 @@ function parsedData (data) {
 //Function for returning current weather to html <-- Jenny
 
 //Function for returning tomorrows weather to html <-- Teemu
+function updateTomorrow(dataObject) {
+
+}
 
 //Function for returning day after tomorrows weather to html <-- Teemu
