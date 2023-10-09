@@ -20,7 +20,11 @@ function parsedData (data) {
   let tomorrow = data.forecast.forecastday[1];
   let dayAfter = data.forecast.forecastday[2];
 
-  return [today, tomorrow, dayAfter];
+  return {
+    today: today,
+    tomorrow: tomorrow,
+    dayAfter: dayAfter
+  };
 
 }
 
