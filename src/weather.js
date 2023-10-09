@@ -34,7 +34,7 @@ function parsedData (data) {
 
 //Function for returning tomorrows weather to html <-- Teemu
 function updateTomorrow(dataObject) {
-
+  console.log(dataObject)
 }
 
 //Function for returning day after tomorrows weather to html <-- Teemu
