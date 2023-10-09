@@ -6,10 +6,23 @@ async function fetchWeather(city) {
   let url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`;
 
   let hr = await fetch(url);
-  return hr;
+  let data = await hr.json();  // Parse data to json Author: Noora
+  let dataArr = await parsedData(data); // Parse data to array Author: Noora
+
+  return dataArr;
+
+
 }
 
 //Function for parseing fetched data <-- Noora
+function parsedData (data) {
+  let today = data.forecast.forecastday[0];
+  let tomorrow = data.forecast.forecastday[1];
+  let dayAfter = data.forecast.forecastday[2];
+
+  return [today, tomorrow, dayAfter];
+
+}
 
 //Function for returning current weather to html <-- Jenny
 
