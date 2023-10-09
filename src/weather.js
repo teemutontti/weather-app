@@ -12,6 +12,16 @@ async function fetchWeather(city) {
 }
 
 //Function for parseing fetched data <-- Noora
+function parsedData (data) {
+  let dataArr = []
+
+  dataArr.push(data.location.name);
+  dataArr.push(data.location.country);
+  dataArr.push(data.current.temp_c);
+
+  return dataArr;
+
+}
 
 //Function for returning current weather to html <-- Jenny
 
