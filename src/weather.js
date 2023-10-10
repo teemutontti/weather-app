@@ -9,6 +9,7 @@ async function fetchWeather(city) {
   let data = await hr.json(); // Parse data to json Author: Noora
   let dataArr = parsedData(data); // Parse data to object Author: Noora
 
+  updateToday(dataArr.today); // Update data to HTML Author: Mikko
   updateTomorrow(dataArr.tomorrow); // Update data to HTML Author: Teemu
 
   return dataArr;
