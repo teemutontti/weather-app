@@ -1,4 +1,9 @@
-//Function for fetching info from html input <-- undefined
+//Function for fetching info from html input <-- Mikko
+function getWeather() {
+  let city = document.getElementById("#").value;
+
+  fetchWeather(city);
+}
 
 //Function for fetching weather <-- Mikko
 async function fetchWeather(city) {
@@ -7,18 +12,17 @@ async function fetchWeather(city) {
 
   let hr = await fetch(url);
   let data = await hr.json(); // Parse data to json Author: Noora
-  let dataArr = parsedData(data); // Parse data to array Author: Noora
+  let dataArr = parsedData(data); // Parse data to object Author: Noora
 
+  updateToday(dataArr.today); // Update data to HTML Author: Mikko
   updateTomorrow(dataArr.tomorrow); // Update data to HTML Author: Teemu
-
-  return dataArr;
 }
 
 //Function for parseing fetched data <-- Noora
 function parsedData(data) {
-  let today = data.forecast.forecastday[0];
-  let tomorrow = data.forecast.forecastday[1];
-  let dayAfter = data.forecast.forecastday[2];
+  let today = data;
+  let tomorrow = data.forecast.forecastday[1].day;
+  let dayAfter = data.forecast.forecastday[2].day;
 
   return {
     today: today,
