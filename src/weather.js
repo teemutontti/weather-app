@@ -16,8 +16,6 @@ async function fetchWeather(city) {
 
   updateToday(dataArr.today); // Update data to HTML Author: Mikko
   updateTomorrow(dataArr.tomorrow); // Update data to HTML Author: Teemu
-
-  return dataArr;
 }
 
 //Function for parseing fetched data <-- Noora
