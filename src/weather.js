@@ -33,7 +33,7 @@ function parsedData(data) {
 
 //Function for returning current weather to html <-- Jenny
 function updateToday(dataObject) {
-  console.log(dataObject);
+  const city = document.querySelector(".today .city");
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
