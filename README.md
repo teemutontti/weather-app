@@ -5,7 +5,7 @@
 <!-- Table of Contents -->
 - [Weather App](#WeatherApp)
   - [Description](#Description)
-  - [Features](#Festures)
+  - [Features](#Features)
   - [Copyright](#Copyright)
   - [Authors](#Authors)
 <!-- /Table of Contents -->
