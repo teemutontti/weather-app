@@ -2,6 +2,14 @@
 
 ![Man with umbrella in a rainy weather](weatherpicture.PNG)
 
+<!-- Table of Contents -->
+- [Weather App](#WeatherApp)
+  - [Description](#Description)
+  - [Features](#Features)
+  - [Copyright](#Copyright)
+  - [Authors](#Authors)
+<!-- /Table of Contents -->
+
 ## Description
 
 This is a school project that is focused on version control and learning how to work in team projects using Git.
