@@ -1,4 +1,9 @@
-//Function for fetching info from html input <-- undefined
+//Function for fetching info from html input <-- Mikko
+function getWeather() {
+  let city = document.getElementById("#").value;
+
+  fetchWeather(city);
+}
 
 //Function for fetching weather <-- Mikko
 async function fetchWeather(city) {
