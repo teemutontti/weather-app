@@ -38,6 +38,7 @@ function updateToday(dataObject) {
   const info = document.querySelector(".today .info");
   const temperature = document.querySelector(".today .temperature");
   const minTemp = document.querySelector(".today .min-temp");
+  const maxTemp = document.querySelector(".today .max-temp");
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
