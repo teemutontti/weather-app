@@ -35,6 +35,7 @@ function parsedData(data) {
 function updateToday(dataObject) {
   const city = document.querySelector(".today .city");
   const icon = document.querySelector(".today img");
+  const info = document.querySelector(".today .info");
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
