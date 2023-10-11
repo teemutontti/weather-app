@@ -41,7 +41,7 @@ function updateToday(dataObject) {
     const maxTemp = document.querySelector(".today .max-temp");
 
     city.textContent = dataObject.location.name;
-    img.src = "http:" + dataObject.current.condition.icon;
+    icon.src = "http:" + dataObject.current.condition.icon;
     info.textContent = dataObject.current.condition.text;
     temperature.textContent = `Temperature: ${dataObject.current.temp_c}°C`;
     minTemp.textContent = `Min temp: ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
