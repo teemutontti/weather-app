@@ -1,9 +1,9 @@
 // Saving the dates each time the script is initialized
-const today = new Date();
-const tomorrow = new Date(today);
-const dayAfter = new Date(tomorrow);
-tomorrow.setDate(tomorrow.getDate() + 1);
-dayAfter.setDate(dayAfter.getDate() + 1);
+const todaysDate = new Date();
+const tomorrowsDate = new Date(todaysDate);
+const dayAftersDate = new Date(tomorrowsDate);
+tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
+dayAftersDate.setDate(dayAftersDate.getDate() + 1);
 
 //Function for fetching info from html input <-- Mikko
 function getWeather() {
