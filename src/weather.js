@@ -1,3 +1,10 @@
+// Saving the dates each time the script is initialized
+const today = new Date();
+const tomorrow = new Date(today);
+const dayAfter = new Date(tomorrow);
+tomorrow.setDate(tomorrow.getDate() + 1);
+dayAfter.setDate(dayAfter.getDate() + 1);
+
 //Function for fetching info from html input <-- Mikko
 function getWeather() {
     let city = document.getElementById("city").value;
