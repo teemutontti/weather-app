@@ -45,6 +45,7 @@ function updateToday(dataObject) {
   info.textContent = dataObject.current.condition.text;
   temperature.textContent = `Temperature: ${dataObject.current.temp_c}°C`;
   minTemp.textContent = `Min temp: ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
+  maxTemp.textContent = `Max temp: ${dataObject.forecast.forecastday[0].day.maxtemp_c}°C`;
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
