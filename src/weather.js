@@ -16,6 +16,7 @@ async function fetchWeather(city) {
 
     updateToday(dataArr.today); // Update data to HTML Author: Mikko
     updateTomorrow(dataArr.tomorrow); // Update data to HTML Author: Teemu
+    updateDayAfter(dataArr.dayAfter); // Update data to HTML Author: Noora
 }
 
 //Function for parseing fetched data <-- Noora
@@ -55,7 +56,15 @@ function updateTomorrow(dataObject) {
     console.log(dataObject);
 }
 
-//Function for returning day after tomorrows weather to html <-- Teemu
+
+//Function for returning day after tomorrows weather to html <-- Noora
+function updateDayAfter(dataObject) {
+    //const icon TO DO
+    //const minTemp TO DO
+    //const maxTemp TO DO
+    //const chanceOfRain TO DO
+    console.log(dataObject);
+}
 
 // Function that checks if current time is day or night and returns true or false
 function checkDay(dataObject) {
@@ -63,3 +72,5 @@ function checkDay(dataObject) {
 
     return day == 1 ? true : false;
 }
+
+
