@@ -56,5 +56,9 @@ function updateTomorrow(dataObject) {
 
 //Function for returning day after tomorrows weather to html <-- Noora
 function updateDayAfter(dataObject) {
+    //const icon TO DO
+    //const minTemp TO DO
+    //const maxTemp TO DO
+    //const chanceOfRain TO DO
     console.log(dataObject);
 }
