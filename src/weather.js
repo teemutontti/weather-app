@@ -42,6 +42,7 @@ function updateToday(dataObject) {
 
   city.textContent = dataObject.location.name;
   img.src = "http:" + dataObject.current.condition.icon;
+  info.textContent = dataObject.current.condition.text;
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
