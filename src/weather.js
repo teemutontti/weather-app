@@ -43,6 +43,7 @@ function updateToday(dataObject) {
   city.textContent = dataObject.location.name;
   img.src = "http:" + dataObject.current.condition.icon;
   info.textContent = dataObject.current.condition.text;
+  temperature.textContent = `Temperature: ${dataObject.current.temp_c}°C`;
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
