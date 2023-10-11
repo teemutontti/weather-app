@@ -53,9 +53,8 @@ function updateToday(dataObject) {
 
 //Function for returning tomorrows weather to html <-- Teemu
 function updateTomorrow(dataObject) {
-    console.log(dataObject);
+    document.querySelector(".tomorrow .min-temp").textContent = `Min temp: ${dataObject.mintemp_c}°C`;
 }
-
 
 //Function for returning day after tomorrows weather to html <-- Noora
 function updateDayAfter(dataObject) {
@@ -72,5 +71,3 @@ function checkDay(dataObject) {
 
     return day == 1 ? true : false;
 }
-
-
