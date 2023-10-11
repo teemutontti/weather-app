@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
-    <title>Weather App</title>
-  </head>
-  <body>
-    <header>
-      <!--Header stores the App title and the search field for cities -->
-      <h1>Weather App</h1>
-      <input type="text" placeholder="City" id="city" />
-      <button id="search">Search</button>
-      <!--TODO: Change button text to search icon -->
-    </header>
-    <main>
-      <!--Main stores the information about weather.-->
-      <div class="container">
-        <!--Inside weather: todays weather is stored in a different
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <title>Weather App</title>
+    </head>
+    <body>
+        <header>
+            <!--Header stores the App title and the search field for cities -->
+            <h1>Weather App</h1>
+            <input type="text" placeholder="City" id="city" />
+            <button id="search">Search</button>
+            <!--TODO: Change button text to search icon -->
+        </header>
+        <main>
+            <!--Main stores the information about weather.-->
+            <div class="container">
+                <!--Inside weather: todays weather is stored in a different
          div than tomorrow and day after weather -->
-        <div class="weather">
-          <div class="today">
-            <p class="city">City</p>
-            <img src="../weatherpicture.PNG" alt="" />
-            <p class="info">Info</p>
-            <p class="temperature">Temperature</p>
-            <p class="min-temp">Min temp</p>
-            <p class="max-temp">Max temp</p>
-          </div>
-          <div class="forecast">
-            <div class="tomorrow"></div>
-            <div class="day-after"></div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <!--Footer stores copyright information and possibly needed contanct information.-->
-    <footer></footer>
-  </body>
+                <div class="weather">
+                    <div class="today">
+                        <p class="city">City</p>
+                        <img src="../weatherpicture.PNG" alt="" />
+                        <p class="info">Info</p>
+                        <p class="temperature">Temperature</p>
+                        <p class="min-temp">Min temp</p>
+                        <p class="max-temp">Max temp</p>
+                    </div>
+                    <div class="forecast">
+                        <div class="tomorrow"></div>
+                        <div class="day-after"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--Footer stores copyright information and possibly needed contanct information.-->
+        <footer></footer>
+        <script src="../src/weather.js"></script>
+    </body>
 </html>
