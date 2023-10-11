@@ -1,6 +1,6 @@
 //Function for fetching info from html input <-- Mikko
 function getWeather() {
-    let city = document.getElementById("#").value;
+    let city = document.getElementById("city").value;
 
     fetchWeather(city);
 }
