@@ -54,3 +54,6 @@ function updateTomorrow(dataObject) {
 }
 
 //Function for returning day after tomorrows weather to html <-- Teemu
+
+// Function that checks if current time is day or night and returns true or false
+function checkDay(dataObject) {}
