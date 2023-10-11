@@ -1,6 +1,6 @@
 //Function for fetching info from html input <-- Mikko
 function getWeather() {
-    let city = document.getElementById("#").value;
+    let city = document.getElementById("city").value;
 
     fetchWeather(city);
 }
@@ -33,6 +33,8 @@ function parsedData(data) {
 
 //Function for returning current weather to html <-- Jenny
 function updateToday(dataObject) {
+    let day = checkDay(dataObject);
+
     const city = document.querySelector(".today .city");
     const icon = document.querySelector(".today img");
     const info = document.querySelector(".today .info");
@@ -54,3 +56,10 @@ function updateTomorrow(dataObject) {
 }
 
 //Function for returning day after tomorrows weather to html <-- Teemu
+
+// Function that checks if current time is day or night and returns true or false
+function checkDay(dataObject) {
+    let day = dataObject.current.is_day;
+
+    return day == 1 ? true : false;
+}
