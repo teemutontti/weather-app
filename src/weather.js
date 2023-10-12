@@ -43,6 +43,12 @@ function parsedData(data) {
 function updateToday(dataObject) {
     let day = checkDay(dataObject);
 
+    if (day) {
+        document.body.style.backgroundImage = "url(./pics/daybg.jpg)";
+    } else {
+        document.body.style.backgroundImage = "url(./pics/nightbg.jpg)";
+    }
+
     document.querySelector(".today .city").textContent =
         dataObject.location.name;
     document.querySelector(".today img").src =
