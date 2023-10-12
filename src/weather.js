@@ -47,13 +47,13 @@ function updateToday(dataObject) {
         dataObject.location.name;
     document.querySelector(".today img").src =
         "http:" + dataObject.current.condition.icon;
+    document.querySelector(".today .info").textContent =
+        dataObject.current.condition.text;
 
-    const info = document.querySelector(".today .info");
     const temperature = document.querySelector(".today .temperature");
     const minTemp = document.querySelector(".today .min-temp");
     const maxTemp = document.querySelector(".today .max-temp");
 
-    info.textContent = dataObject.current.condition.text;
     temperature.textContent = `Temperature: ${dataObject.current.temp_c}°C`;
     minTemp.textContent = `Min temp: ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
     maxTemp.textContent = `Max temp: ${dataObject.forecast.forecastday[0].day.maxtemp_c}°C`;
