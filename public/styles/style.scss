@@ -4,10 +4,36 @@ body {
   margin: 0px;
   background-color: $backgroud-color;
   color: $base-font-color;
+  text-align: center;
 }
 
 header {
   font-family: $header-font;
   font-size: $header-font-size;
   color: $header-font-color;
+}
+
+.container {
+  // TEMPORARY! Background color to distinguish the section.
+  background-color: rgba(240, 255, 255, 0.2);
+  .weather {
+    // TEMPORARY! Background color to distinguish the section.
+    background-color: rgba(240, 255, 255, 0.2);
+    .today {
+      // TEMPORARY! Background color to distinguish the section.
+      background-color: rgba(240, 255, 255, 0.2);
+    }
+    .forecast {
+      // TEMPORARY! Background color to distinguish the section.
+      background-color: rgba(240, 255, 255, 0.2);
+      .tomorrow {
+        // TEMPORARY! Background color to distinguish the section.
+        background-color: rgba(240, 255, 255, 0.2);
+      }
+      .day-after {
+        // TEMPORARY! Background color to distinguish the section.
+        background-color: rgba(240, 255, 255, 0.2);
+      }
+    }
+  }
 }
