@@ -43,6 +43,14 @@ function parsedData(data) {
 function updateToday(dataObject) {
     let day = checkDay(dataObject);
 
+    //Change website background if its day or night
+    if (day) {
+        document.body.style.backgroundImage = "url(./pics/daybg.jpg)";
+    } else {
+        document.body.style.backgroundImage = "url(./pics/nightbg.jpg)";
+    }
+
+    //Change website information based on retrieved data from API
     document.querySelector(".today .city").textContent =
         dataObject.location.name;
     document.querySelector(".today img").src =
