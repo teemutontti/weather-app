@@ -90,7 +90,5 @@ function updateDayAfter(dataObject) {
 
 // Function that checks if current time is day or night and returns true or false
 function checkDay(dataObject) {
-    let day = dataObject.current.is_day;
-
-    return day == 1 ? true : false;
+    return dataObject.current.is_day == 1 ? true : false;
 }
