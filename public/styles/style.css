@@ -1,8 +1,11 @@
 body {
+  margin: 0px;
   background-color: rgb(180, 98, 42);
+  color: blue;
 }
 
 header {
-  font: Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
   font-size: 28px;
+  color: rgb(86, 86, 247);
 }/*# sourceMappingURL=style.css.map */
