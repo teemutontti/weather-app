@@ -55,10 +55,9 @@ function updateToday(dataObject) {
     document.querySelector(
         ".today .min-temp"
     ).textContent = `Min temp: ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
-
-    const maxTemp = document.querySelector(".today .max-temp");
-
-    maxTemp.textContent = `Max temp: ${dataObject.forecast.forecastday[0].day.maxtemp_c}°C`;
+    document.querySelector(
+        ".today .max-temp"
+    ).textContent = `Max temp: ${dataObject.forecast.forecastday[0].day.maxtemp_c}°C`;
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
