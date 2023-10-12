@@ -43,6 +43,7 @@ function parsedData(data) {
 function updateToday(dataObject) {
     let day = checkDay(dataObject);
 
+    //Change website background if its day or night
     if (day) {
         document.body.style.backgroundImage = "url(./pics/daybg.jpg)";
     } else {
