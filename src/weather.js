@@ -50,6 +50,7 @@ function updateToday(dataObject) {
         document.body.style.backgroundImage = "url(./pics/nightbg.jpg)";
     }
 
+    //Change website information based on retrieved data from API
     document.querySelector(".today .city").textContent =
         dataObject.location.name;
     document.querySelector(".today img").src =
