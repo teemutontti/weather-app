@@ -16,6 +16,8 @@ header {
 }
 .container .weather {
   background-color: rgba(240, 255, 255, 0.2);
+  max-width: 600px;
+  margin: 0px auto;
 }
 .container .weather .today {
   background-color: rgba(240, 255, 255, 0.2);
