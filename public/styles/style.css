@@ -24,6 +24,9 @@ header {
 }
 .container .weather .forecast {
   background-color: rgba(240, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 .container .weather .forecast .tomorrow {
   background-color: rgba(240, 255, 255, 0.2);
