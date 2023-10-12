@@ -52,11 +52,12 @@ function updateToday(dataObject) {
     document.querySelector(
         ".today .temperature"
     ).textContent = `Temperature: ${dataObject.current.temp_c}°C`;
+    document.querySelector(
+        ".today .min-temp"
+    ).textContent = `Min temp: ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
 
-    const minTemp = document.querySelector(".today .min-temp");
     const maxTemp = document.querySelector(".today .max-temp");
 
-    minTemp.textContent = `Min temp: ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
     maxTemp.textContent = `Max temp: ${dataObject.forecast.forecastday[0].day.maxtemp_c}°C`;
 }
 
