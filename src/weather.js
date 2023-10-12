@@ -43,14 +43,15 @@ function parsedData(data) {
 function updateToday(dataObject) {
     let day = checkDay(dataObject);
 
-    const city = document.querySelector(".today .city");
+    document.querySelector(".today .city").textContent =
+        dataObject.location.name;
+
     const icon = document.querySelector(".today img");
     const info = document.querySelector(".today .info");
     const temperature = document.querySelector(".today .temperature");
     const minTemp = document.querySelector(".today .min-temp");
     const maxTemp = document.querySelector(".today .max-temp");
 
-    city.textContent = dataObject.location.name;
     icon.src = "http:" + dataObject.current.condition.icon;
     info.textContent = dataObject.current.condition.text;
     temperature.textContent = `Temperature: ${dataObject.current.temp_c}°C`;
@@ -60,11 +61,21 @@ function updateToday(dataObject) {
 
 //Function for returning tomorrows weather to html <-- Teemu
 function updateTomorrow(dataObject) {
-    document.querySelector(".tomorrow .date").textContent = `${tomorrowsDate.toDateString()}`;
-    document.querySelector(".tomorrow img").src = `https:${dataObject.condition.icon}`;
-    document.querySelector(".tomorrow .min-temp").textContent = `Min temp: ${dataObject.mintemp_c}°C`;
-    document.querySelector(".tomorrow .max-temp").textContent = `Max temp: ${dataObject.maxtemp_c}°C`;
-    document.querySelector(".tomorrow .chance-of-rain").textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
+    document.querySelector(
+        ".tomorrow .date"
+    ).textContent = `${tomorrowsDate.toDateString()}`;
+    document.querySelector(
+        ".tomorrow img"
+    ).src = `https:${dataObject.condition.icon}`;
+    document.querySelector(
+        ".tomorrow .min-temp"
+    ).textContent = `Min temp: ${dataObject.mintemp_c}°C`;
+    document.querySelector(
+        ".tomorrow .max-temp"
+    ).textContent = `Max temp: ${dataObject.maxtemp_c}°C`;
+    document.querySelector(
+        ".tomorrow .chance-of-rain"
+    ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
 }
 
 //Function for returning day after tomorrows weather to html <-- Noora
