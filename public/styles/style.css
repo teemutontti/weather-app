@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0px;
   background-color: rgb(180, 98, 42);
@@ -10,18 +14,38 @@ header {
   font-size: 28px;
   color: rgb(86, 86, 247);
 }
-header #search {
-  background-color: rgba(255, 255, 255, 0.5);
-  border: none;
-  border-radius: 2px;
-  width: 35px;
+header .search {
   height: 35px;
+  max-width: 235px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
-header #search .material-symbols-outlined {
+header .search #field {
+  width: 200px;
+  height: 100%;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-left: 10px;
+}
+header .search #icon {
+  background-color: rgb(0, 162, 255);
+  border: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100%;
+  width: 35px;
+}
+header .search #icon .material-symbols-outlined {
+  color: white;
   font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
 }
-header #search:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+header .search #icon:hover {
+  background-color: rgb(0, 139, 216);
 }
 
 .container {
