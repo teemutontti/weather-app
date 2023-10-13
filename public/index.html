@@ -10,10 +10,12 @@
     <body>
         <header>
             <h1>Weather App</h1>
-            <input type="text" placeholder="City" id="city" />
-            <button id="search" onclick="getWeather()">
-                <span class="material-symbols-outlined">search</span>
-            </button>
+            <div class="search">
+                <input id="field" type="text" placeholder="City"/>
+                <button id="icon" onclick="getWeather()">
+                    <span class="material-symbols-outlined">search</span>
+                </button>
+            </div>
         </header>
         <main>
             <div class="container">
