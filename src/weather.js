@@ -66,6 +66,9 @@ function updateToday(dataObject) {
     document.querySelector(
         ".today .max-temp"
     ).textContent = `Max temp: ${dataObject.forecast.forecastday[0].day.maxtemp_c}°C`;
+    document.querySelector(".today .wind").textContent = `Wind: ${calcWindSpeed(
+        dataObject
+    )} m/s`;
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
