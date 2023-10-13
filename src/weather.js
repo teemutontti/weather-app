@@ -5,6 +5,12 @@ const dayAftersDate = new Date(tomorrowsDate);
 tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
 dayAftersDate.setDate(dayAftersDate.getDate() + 1);
 
+//Function for returning date in a formatted matter
+const formatDate = (date) => {
+    const options = { weekday: "short", month: "short", day: "numeric" };
+    return date.toLocaleDateString("en-US", options);
+};
+
 //Function for fetching info from html input <-- Mikko
 function getWeather() {
     let city = document.getElementById("city").value;
@@ -66,13 +72,16 @@ function updateToday(dataObject) {
     document.querySelector(
         ".today .max-temp"
     ).textContent = `Max temp: ${dataObject.forecast.forecastday[0].day.maxtemp_c}°C`;
+    document.querySelector(".today .wind").textContent = `Wind: ${calcWindSpeed(
+        dataObject
+    )} m/s`;
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
 function updateTomorrow(dataObject) {
-    document.querySelector(
-        ".tomorrow .date"
-    ).textContent = `${tomorrowsDate.toDateString()}`;
+    document.querySelector(".tomorrow .date").textContent = `${formatDate(
+        tomorrowsDate
+    )}`;
     document.querySelector(
         ".tomorrow img"
     ).src = `https:${dataObject.condition.icon}`;
@@ -99,4 +108,16 @@ function updateDayAfter(dataObject) {
 // Function that checks if current time is day or night and returns true or false
 function checkDay(dataObject) {
     return dataObject.current.is_day == 1 ? true : false;
+}
+
+//Function to calculate windspeed
+function calcWindSpeed(dataObject) {
+    //Get windspeed as km/h
+    let windSpeedKph = dataObject.current.wind_kph;
+
+    //Transfer into m/s
+    let windSpeedMs = (windSpeedKph * 1000) / 3600;
+
+    //Return results with .1 decimal accuracity
+    return windSpeedMs.toFixed(1);
 }
