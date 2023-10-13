@@ -100,3 +100,10 @@ function updateDayAfter(dataObject) {
 function checkDay(dataObject) {
     return dataObject.current.is_day == 1 ? true : false;
 }
+
+//Function to calculate windspeed
+function calcWindSpeed(dataObject) {
+    let windSpeedKph = dataObject.current.wind_kph;
+    let windSpeedMs = (windSpeedKph * 1000) / 3600;
+    return windSpeedMs.toFixed(1);
+}
