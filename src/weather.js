@@ -103,6 +103,9 @@ function updateDayAfter(dataObject) {
         ".day-after img"
     ).src = `https:${dataObject.condition.icon}`;
     //const minTemp TO DO
+    document.querySelector(
+        ".day-after .min-temp"
+    ).textContent = `Min temp: ${dataObject.mintemp_c}°C`;
     //const maxTemp TO DO
     //const chanceOfRain TO DO
     console.log(dataObject);
