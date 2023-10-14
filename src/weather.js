@@ -107,6 +107,9 @@ function updateDayAfter(dataObject) {
         ".day-after .min-temp"
     ).textContent = `Min temp: ${dataObject.mintemp_c}°C`;
     //const maxTemp TO DO
+    document.querySelector(
+        ".day-after .max-temp"
+    ).textContent = `Max temp: ${dataObject.maxtemp_c}°C`;
     //const chanceOfRain TO DO
     console.log(dataObject);
 }
