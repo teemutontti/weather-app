@@ -111,7 +111,9 @@ function updateDayAfter(dataObject) {
         ".day-after .max-temp"
     ).textContent = `Max temp: ${dataObject.maxtemp_c}°C`;
     //const chanceOfRain TO DO
-    console.log(dataObject);
+    document.querySelector(
+        ".day-after .chance-of-rain"
+    ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
 }
 
 // Function that checks if current time is day or night and returns true or false
