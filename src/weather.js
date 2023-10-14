@@ -3,7 +3,7 @@ const todaysDate = new Date();
 const tomorrowsDate = new Date(todaysDate);
 const dayAftersDate = new Date(tomorrowsDate);
 tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
-dayAftersDate.setDate(dayAftersDate.getDate() + 1);
+dayAftersDate.setDate(dayAftersDate.getDate() + 2);
 
 //Function for returning date in a formatted matter
 const formatDate = (date) => {
@@ -98,11 +98,22 @@ function updateTomorrow(dataObject) {
 
 //Function for returning day after tomorrows weather to html <-- Noora
 function updateDayAfter(dataObject) {
-    //const icon TO DO
-    //const minTemp TO DO
-    //const maxTemp TO DO
-    //const chanceOfRain TO DO
-    console.log(dataObject);
+    document.querySelector(".day-after .date").textContent = `${formatDate(
+        dayAftersDate
+    )}`;
+
+    document.querySelector(
+        ".day-after img"
+    ).src = `https:${dataObject.condition.icon}`;
+    document.querySelector(
+        ".day-after .min-temp"
+    ).textContent = `Min temp: ${dataObject.mintemp_c}°C`;
+    document.querySelector(
+        ".day-after .max-temp"
+    ).textContent = `Max temp: ${dataObject.maxtemp_c}°C`;
+    document.querySelector(
+        ".day-after .chance-of-rain"
+    ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
 }
 
 // Function that checks if current time is day or night and returns true or false
