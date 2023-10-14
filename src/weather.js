@@ -3,7 +3,7 @@ const todaysDate = new Date();
 const tomorrowsDate = new Date(todaysDate);
 const dayAftersDate = new Date(tomorrowsDate);
 tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
-dayAftersDate.setDate(dayAftersDate.getDate() + 1);
+dayAftersDate.setDate(dayAftersDate.getDate() + 2);
 
 //Function for returning date in a formatted matter
 const formatDate = (date) => {
