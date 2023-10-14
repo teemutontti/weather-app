@@ -99,6 +99,9 @@ function updateTomorrow(dataObject) {
 //Function for returning day after tomorrows weather to html <-- Noora
 function updateDayAfter(dataObject) {
     //const icon TO DO
+    document.querySelector(
+        ".day-after img"
+    ).src = `https:${dataObject.condition.icon}`;
     //const minTemp TO DO
     //const maxTemp TO DO
     //const chanceOfRain TO DO
