@@ -6,11 +6,10 @@
 
 ## Table of Contents
 
--   [Weather App](#WeatherApp)
-    -   [Description](#Description)
-    -   [Features](#Features)
-    -   [Copyright](#Copyright)
-    -   [Authors](#Authors)
+-   [Description](#Description)
+-   [Features](#Features)
+-   [Copyright](#Copyright)
+-   [Authors](#Authors)
     <!-- /Table of Contents -->
 
 ## Description
@@ -28,6 +27,7 @@ The data used in this project is from https://www.weatherapi.com/.
 -   Real-time weather data retrieval
 -   User-friendly interface
 -   Worldwide weather info
+-   Dynamic day-night background
 
 ## Copyright
 
