@@ -7,10 +7,10 @@
 ## Table of Contents
 
 -   [Weather App](#WeatherApp)
-    -   [Description](#Description)
-    -   [Features](#Features)
-    -   [Copyright](#Copyright)
-    -   [Authors](#Authors)
+-   [Description](#Description)
+-   [Features](#Features)
+-   [Copyright](#Copyright)
+-   [Authors](#Authors)
     <!-- /Table of Contents -->
 
 ## Description
