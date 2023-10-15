@@ -1,85 +1,82 @@
 @import "variables";
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0px;
-  background-color: $backgroud-color;
-  color: $base-font-color;
-  text-align: center;
+    margin: 0px;
+    background-color: $backgroud-color;
+    color: $base-font-color;
+    text-align: center;
 }
 
 header {
-  font-family: $header-font;
-  font-size: $header-font-size;
-  color: $header-font-color;
-  .search {
-    height: 35px;
-    max-width: 235px;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
-    #field {
-      width: 200px;
-      height: 100%;
-      border: none;
-      border-bottom-left-radius: 5px;
-      border-top-left-radius: 5px;
-      padding-left: 10px;
+    font-family: $header-font;
+    font-size: $header-font-size;
+    color: $header-font-color;
+    .search {
+        height: 35px;
+        max-width: 235px;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 5px;
+        #field {
+            width: 200px;
+            height: 100%;
+            border: none;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            padding-left: 10px;
+        }
+        #icon {
+            background-color: rgb(0, 162, 255);
+            border: none;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            height: 100%;
+            width: 35px;
+            .material-symbols-outlined {
+                color: white;
+                font-variation-settings: // Google icon settings
+                    "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+            }
+            &:hover {
+                background-color: rgb(0, 139, 216);
+            }
+        }
     }
-    #icon {
-      background-color: rgb(0, 162, 255);
-      border: none;
-      border-bottom-right-radius: 5px;
-      border-top-right-radius: 5px;
-      height: 100%;
-      width: 35px;
-      .material-symbols-outlined {
-        color: white;
-        font-variation-settings: // Google icon settings
-        'FILL' 0,
-        'wght' 300,
-        'GRAD' 0,
-        'opsz' 24
-      }
-      &:hover {
-        background-color: rgb(0, 139, 216);
-      }
-    }
-  }
 }
 
 .container {
-  // TEMPORARY! Background color to distinguish the section.
-  background-color: rgba(240, 255, 255, 0.2);
-  .weather {
     // TEMPORARY! Background color to distinguish the section.
     background-color: rgba(240, 255, 255, 0.2);
-    max-width: 600px;
-    margin: 0px auto; // Auto centers the element
-    .today {
-      // TEMPORARY! Background color to distinguish the section.
-      background-color: rgba(240, 255, 255, 0.2);
-    }
-    .forecast {
-      // TEMPORARY! Background color to distinguish the section.
-      background-color: rgba(240, 255, 255, 0.2);
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      .tomorrow {
+    .weather {
         // TEMPORARY! Background color to distinguish the section.
         background-color: rgba(240, 255, 255, 0.2);
-      }
-      .day-after {
-        // TEMPORARY! Background color to distinguish the section.
-        background-color: rgba(240, 255, 255, 0.2);
-      }
+        max-width: 600px;
+        margin: 0px auto; // Auto centers the element
+        .today {
+            // TEMPORARY! Background color to distinguish the section.
+            background-color: rgba(240, 255, 255, 0.2);
+        }
+        .forecast {
+            // TEMPORARY! Background color to distinguish the section.
+            background-color: rgba(240, 255, 255, 0.2);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            .tomorrow {
+                // TEMPORARY! Background color to distinguish the section.
+                background-color: rgba(240, 255, 255, 0.2);
+            }
+            .day-after {
+                // TEMPORARY! Background color to distinguish the section.
+                background-color: rgba(240, 255, 255, 0.2);
+            }
+        }
     }
-  }
 }
