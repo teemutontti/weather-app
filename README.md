@@ -6,7 +6,6 @@
 
 ## Table of Contents
 
--   [Weather App](#WeatherApp)
 -   [Description](#Description)
 -   [Features](#Features)
 -   [Copyright](#Copyright)
