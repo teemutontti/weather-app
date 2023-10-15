@@ -27,6 +27,7 @@ The data used in this project is from https://www.weatherapi.com/.
 -   Real-time weather data retrieval
 -   User-friendly interface
 -   Worldwide weather info
+-   Dynamic day-night background
 
 ## Copyright
 
