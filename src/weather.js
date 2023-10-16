@@ -18,6 +18,13 @@ function getWeather() {
     fetchWeather(city);
 }
 
+//Function to call getWeather if enter is pressed in html search form.
+document.getElementById("field").addEventListener("keyup", function (event) {
+    if (event.key === "Enter") {
+        getWeather();
+    }
+});
+
 //Function for fetching weather <-- Mikko
 async function fetchWeather(city) {
     const apiKey = "e15e748acfc2424f9df135245232809";
