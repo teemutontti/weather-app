@@ -12,3 +12,9 @@ $base-font-size: 14px;
     font-family: $base-font;
     color: $base-font-color;
 }
+
+%base-text-style {
+    font-size: $base-font-size;
+    font-family: $base-font;
+    color: $base-font-color;
+}
