@@ -7,14 +7,12 @@
 body {
     margin: 0px;
     background-color: $backgroud-color;
-    color: $base-font-color;
     text-align: center;
+    @extend %base-text-style;
 }
 
 header {
-    font-family: $header-font;
-    font-size: $header-font-size;
-    color: $header-font-color;
+    @extend %header-style;
     .search {
         height: 35px;
         max-width: 235px;
