@@ -6,3 +6,9 @@ $header-font-size: 28px;
 $base-font-color: #f6f1f1;
 $base-font: "Montserrat";
 $base-font-size: 14px;
+
+%header-style {
+    font-size: $header-font-size;
+    font-family: $base-font;
+    color: $base-font-color;
+}
