@@ -4,14 +4,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles/style.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        />
         <title>Weather App</title>
     </head>
     <body>
         <header>
             <h1>Weather App</h1>
             <div class="search">
-                <input id="field" type="text" placeholder="City"/>
+                <input id="field" type="text" placeholder="City" />
                 <button id="icon" onclick="getWeather()">
                     <span class="material-symbols-outlined">search</span>
                 </button>
@@ -25,8 +28,7 @@
                         <img src="../weatherpicture.PNG" alt="" />
                         <p class="info">Info</p>
                         <p class="temperature">Temperature</p>
-                        <p class="min-temp">Min temp</p>
-                        <p class="max-temp">Max temp</p>
+                        <p class="max-min-temp">Max/min temp</p>
                         <p class="wind">Wind</p>
                     </div>
                     <div class="forecast">
