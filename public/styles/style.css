@@ -1,73 +1,76 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0px;
-    background-color: rgb(180, 98, 42);
-    color: blue;
-    text-align: center;
+  margin: 0px;
+  background-color: rgb(180, 98, 42);
+  color: blue;
+  text-align: center;
 }
 
 header {
-    font-family: Helvetica, sans-serif;
-    font-size: 28px;
-    color: rgb(86, 86, 247);
+  font-family: Helvetica, sans-serif;
+  font-size: 28px;
+  color: rgb(86, 86, 247);
 }
 header .search {
-    height: 35px;
-    max-width: 235px;
-    margin: 0px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
+  height: 35px;
+  max-width: 235px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 header .search #field {
-    width: 200px;
-    height: 100%;
-    border: none;
-    border-bottom-left-radius: 5px;
-    border-top-left-radius: 5px;
-    padding-left: 10px;
+  width: 200px;
+  height: 100%;
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  padding-left: 10px;
 }
 header .search #icon {
-    background-color: rgb(0, 162, 255);
-    border: none;
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    height: 100%;
-    width: 35px;
+  background-color: rgb(0, 162, 255);
+  border: none;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 100%;
+  width: 35px;
 }
 header .search #icon .material-symbols-outlined {
-    color: white;
-    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+  color: white;
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
 }
 header .search #icon:hover {
-    background-color: rgb(0, 139, 216);
+  background-color: rgb(0, 139, 216);
 }
 
 .container {
-    background-color: rgba(240, 255, 255, 0.2);
+  background-color: rgba(240, 255, 255, 0.2);
 }
 .container .weather {
-    background-color: rgba(240, 255, 255, 0.2);
-    max-width: 600px;
-    margin: 0px auto;
+  background-color: rgba(240, 255, 255, 0.2);
+  max-width: 600px;
+  margin: 0px auto;
 }
 .container .weather .today {
-    background-color: rgba(240, 255, 255, 0.2);
+  background-color: rgba(240, 255, 255, 0.2);
+}
+.container .weather .today .temperature {
+  font-size: 3em;
 }
 .container .weather .forecast {
-    background-color: rgba(240, 255, 255, 0.2);
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  background-color: rgba(240, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 .container .weather .forecast .tomorrow {
-    background-color: rgba(240, 255, 255, 0.2);
+  background-color: rgba(240, 255, 255, 0.2);
 }
 .container .weather .forecast .day-after {
-    background-color: rgba(240, 255, 255, 0.2);
-} /*# sourceMappingURL=style.css.map */
+  background-color: rgba(240, 255, 255, 0.2);
+}/*# sourceMappingURL=style.css.map */

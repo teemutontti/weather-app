@@ -62,6 +62,10 @@ header {
         .today {
             // TEMPORARY! Background color to distinguish the section.
             background-color: rgba(240, 255, 255, 0.2);
+            .temperature {
+                //add font-size to temperature Author Noora
+                font-size: 3em;
+            }
         }
         .forecast {
             // TEMPORARY! Background color to distinguish the section.
