@@ -62,6 +62,7 @@ header .search #icon:hover {
   background-color: rgba(240, 255, 255, 0.2);
   max-width: 400px;
   margin: 0px auto;
+  border-radius: 20px;
 }
 .container .weather .today {
   background-color: rgba(240, 255, 255, 0.2);
