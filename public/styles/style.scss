@@ -50,11 +50,9 @@ header {
 }
 
 .container {
-    // TEMPORARY! Background color to distinguish the section.
-    background-color: rgba(240, 255, 255, 0.2);
     .weather {
         // TEMPORARY! Background color to distinguish the section.
-        background-color: rgba(240, 255, 255, 0.2);
+        background-color: $main-color-4;
         max-width: 400px;
         margin: 0px auto; // Auto centers the element
         border-radius: 20px;
