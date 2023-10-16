@@ -67,11 +67,8 @@ function updateToday(dataObject) {
         ".today .temperature"
     ).textContent = `Temperature: ${dataObject.current.temp_c}°C`;
     document.querySelector(
-        ".today .min-temp"
-    ).textContent = `Min temp: ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
-    document.querySelector(
-        ".today .max-temp"
-    ).textContent = `Max temp: ${dataObject.forecast.forecastday[0].day.maxtemp_c}°C`;
+        ".today .max-min-temp"
+    ).textContent = `Max/min temp: ${dataObject.forecast.forecastday[0].day.maxtemp_c}°C/${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
     document.querySelector(".today .wind").textContent = `Wind: ${calcWindSpeed(
         dataObject
     )} m/s`;
@@ -86,11 +83,8 @@ function updateTomorrow(dataObject) {
         ".tomorrow img"
     ).src = `https:${dataObject.condition.icon}`;
     document.querySelector(
-        ".tomorrow .min-temp"
-    ).textContent = `Min temp: ${dataObject.mintemp_c}°C`;
-    document.querySelector(
-        ".tomorrow .max-temp"
-    ).textContent = `Max temp: ${dataObject.maxtemp_c}°C`;
+        ".tomorrow .max-min-temp"
+    ).textContent = `Max/min temp: ${dataObject.maxtemp_c}°C/${dataObject.mintemp_c}°C`;
     document.querySelector(
         ".tomorrow .chance-of-rain"
     ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
@@ -106,11 +100,8 @@ function updateDayAfter(dataObject) {
         ".day-after img"
     ).src = `https:${dataObject.condition.icon}`;
     document.querySelector(
-        ".day-after .min-temp"
-    ).textContent = `Min temp: ${dataObject.mintemp_c}°C`;
-    document.querySelector(
-        ".day-after .max-temp"
-    ).textContent = `Max temp: ${dataObject.maxtemp_c}°C`;
+        ".day-after .max-min-temp"
+    ).textContent = `Max/min temp: ${dataObject.maxtemp_c}°C/${dataObject.mintemp_c}°C`;
     document.querySelector(
         ".day-after .chance-of-rain"
     ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
