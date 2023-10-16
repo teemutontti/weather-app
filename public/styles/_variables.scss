@@ -7,6 +7,13 @@ $base-font-color: #f6f1f1;
 $base-font: "Montserrat";
 $base-font-size: 14px;
 
+// Main colors
+// https://colorhunt.co/palette/f6f1f1afd3e219a7ce146c94
+$main-color-1: #f6f1f1;
+$main-color-2: #afd3e2;
+$main-color-3: #19a7ce;
+$main-color-4: #146c94;
+
 %header-style {
     font-size: $header-font-size;
     font-family: $base-font;
