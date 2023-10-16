@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Unbounded:wght@300&display=swap");
+header {
+  font-size: 28px;
+  font-family: "Montserrat";
+  color: #f6f1f1;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #f6f1f1;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -5,15 +18,9 @@
 body {
   margin: 0px;
   background-color: rgb(180, 98, 42);
-  color: blue;
   text-align: center;
 }
 
-header {
-  font-family: Helvetica, sans-serif;
-  font-size: 28px;
-  color: rgb(86, 86, 247);
-}
 header .search {
   height: 35px;
   max-width: 235px;
