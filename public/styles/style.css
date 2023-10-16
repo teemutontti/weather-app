@@ -61,6 +61,7 @@ header .search #icon:hover {
 }
 .container .weather .today .temperature {
   font-size: 3em;
+  margin: 0px;
 }
 .container .weather .forecast {
   background-color: rgba(240, 255, 255, 0.2);
