@@ -65,7 +65,7 @@ function updateToday(dataObject) {
         dataObject.current.condition.text;
     document.querySelector(
         ".today .temperature"
-    ).textContent = `Temperature: ${dataObject.current.temp_c}°C`;
+    ).textContent = `${dataObject.current.temp_c}°C`;
     document.querySelector(
         ".today .max-min-temp"
     ).textContent = `Max/min temp: ${dataObject.forecast.forecastday[0].day.maxtemp_c}°C/${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
