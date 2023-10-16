@@ -100,11 +100,8 @@ function updateDayAfter(dataObject) {
         ".day-after img"
     ).src = `https:${dataObject.condition.icon}`;
     document.querySelector(
-        ".day-after .min-temp"
-    ).textContent = `Min temp: ${dataObject.mintemp_c}°C`;
-    document.querySelector(
-        ".day-after .max-temp"
-    ).textContent = `Max temp: ${dataObject.maxtemp_c}°C`;
+        ".day-after .max-min-temp"
+    ).textContent = `Max/min temp: ${dataObject.maxtemp_c}°C/${dataObject.mintemp_c}°C`;
     document.querySelector(
         ".day-after .chance-of-rain"
     ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
