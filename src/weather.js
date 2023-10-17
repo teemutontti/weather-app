@@ -91,7 +91,7 @@ function updateTomorrow(dataObject) {
     ).src = `https:${dataObject.condition.icon}`;
     document.querySelector(
         ".tomorrow .max-min-temp"
-    ).textContent = `Max/min temp: ${dataObject.maxtemp_c}°C/${dataObject.mintemp_c}°C`;
+    ).textContent = `${dataObject.maxtemp_c}°C/${dataObject.mintemp_c}°C`;
     document.querySelector(
         ".tomorrow .chance-of-rain"
     ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
