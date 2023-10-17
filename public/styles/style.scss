@@ -33,7 +33,7 @@ header {
             color: $base-font-color;
 
             &::placeholder {
-                color: $base-font-color;
+                color: rgba($base-font-color, 0.7);
             }
         }
         #icon {
