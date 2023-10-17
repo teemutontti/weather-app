@@ -71,7 +71,6 @@ header .search #icon:hover {
   padding: 10px 20px;
 }
 .container .weather .today {
-  background-color: rgba(240, 255, 255, 0.2);
   border-radius: 15px;
 }
 .container .weather .today h2 {
@@ -86,14 +85,7 @@ header .search #icon:hover {
   padding: 10px;
 }
 .container .weather .forecast {
-  background-color: rgba(240, 255, 255, 0.2);
   display: flex;
   justify-content: center;
   gap: 20px;
-}
-.container .weather .forecast .tomorrow {
-  background-color: rgba(240, 255, 255, 0.2);
-}
-.container .weather .forecast .day-after {
-  background-color: rgba(240, 255, 255, 0.2);
 }/*# sourceMappingURL=style.css.map */

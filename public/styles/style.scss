@@ -57,15 +57,12 @@ header {
 
 .container {
     .weather {
-        // TEMPORARY! Background color to distinguish the section.
         background-color: $main-color-4;
         max-width: 400px;
         margin: 30px auto; // Auto centers the element
         border-radius: 20px;
         padding: 10px 20px;
         .today {
-            // TEMPORARY! Background color to distinguish the section.
-            background-color: rgba(240, 255, 255, 0.2);
             border-radius: 15px;
 
             h2 {
@@ -84,19 +81,9 @@ header {
             }
         }
         .forecast {
-            // TEMPORARY! Background color to distinguish the section.
-            background-color: rgba(240, 255, 255, 0.2);
             display: flex;
             justify-content: center;
             gap: 20px;
-            .tomorrow {
-                // TEMPORARY! Background color to distinguish the section.
-                background-color: rgba(240, 255, 255, 0.2);
-            }
-            .day-after {
-                // TEMPORARY! Background color to distinguish the section.
-                background-color: rgba(240, 255, 255, 0.2);
-            }
         }
     }
 }
