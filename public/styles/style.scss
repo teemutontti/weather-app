@@ -61,9 +61,10 @@ header {
         max-width: 400px;
         margin: 30px auto; // Auto centers the element
         border-radius: 20px;
-        padding: 10px 20px;
         .today {
             border-radius: 15px;
+            background-color: $main-color-3;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 
             h2 {
                 padding: 10px;
