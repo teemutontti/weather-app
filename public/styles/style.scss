@@ -60,11 +60,21 @@ header {
         .today {
             // TEMPORARY! Background color to distinguish the section.
             background-color: rgba(240, 255, 255, 0.2);
+            border-radius: 15px;
+
+            h2 {
+                padding: 10px;
+            }
+
             .temperature {
                 //add font-size and zero margin to temperature -> Author Noora
-                font-size: 3em;
+                font-size: 3.5em;
                 margin: 0px;
-                padding: 15px;
+                padding: 10px;
+            }
+
+            .wind {
+                padding: 10px;
             }
         }
         .forecast {
