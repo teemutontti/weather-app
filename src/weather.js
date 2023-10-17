@@ -58,9 +58,9 @@ function updateToday(dataObject) {
 
     //Change website background if its day or night
     if (day) {
-        document.body.style.backgroundImage = "url(./pics/daybg.jpg)";
+        document.body.style.backgroundImage = "url(./pics/daybg.webp)";
     } else {
-        document.body.style.backgroundImage = "url(./pics/nightbg.jpg)";
+        document.body.style.backgroundImage = "url(./pics/nightbg.webp)";
     }
 
     //Change website information based on retrieved data from API
