@@ -61,6 +61,11 @@ header {
             // TEMPORARY! Background color to distinguish the section.
             background-color: rgba(240, 255, 255, 0.2);
             border-radius: 15px;
+
+            h2 {
+                padding: 10px;
+            }
+
             .temperature {
                 //add font-size and zero margin to temperature -> Author Noora
                 font-size: 3em;
