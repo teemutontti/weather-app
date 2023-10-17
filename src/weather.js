@@ -108,7 +108,7 @@ function updateDayAfter(dataObject) {
     ).src = `https:${dataObject.condition.icon}`;
     document.querySelector(
         ".day-after .max-min-temp"
-    ).textContent = `Max/min temp: ${dataObject.maxtemp_c}°C/${dataObject.mintemp_c}°C`;
+    ).textContent = `${dataObject.maxtemp_c}°C/${dataObject.mintemp_c}°C`;
     document.querySelector(
         ".day-after .chance-of-rain"
     ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
