@@ -6,7 +6,7 @@
 
 body {
     margin: 0px;
-    background-color: $backgroud-color;
+    background-image: url("../pics/daybg.webp");
     text-align: center;
     @extend %base-text-style;
 }
