@@ -70,11 +70,12 @@ header {
                 padding: 15px;
             }
 
-            .temperature {
-                //add font-size and zero margin to temperature -> Author Noora
-                font-size: 3.5em;
-                margin: 0px;
-                padding: 10px;
+            .main-view {
+                .temperature {
+                    //add font-size and zero margin to temperature -> Author Noora
+                    font-size: 3.5em;
+                    margin: 0px;
+                }
             }
 
             .wind {
