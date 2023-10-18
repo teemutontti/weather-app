@@ -78,6 +78,11 @@ header .search #icon:hover {
 .container .weather .today h2 {
   padding: 15px;
 }
+.container .weather .today .main-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container .weather .today .main-view .temperature {
   font-size: 3.5em;
   margin: 0px;

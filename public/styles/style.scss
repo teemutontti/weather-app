@@ -71,6 +71,9 @@ header {
             }
 
             .main-view {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 .temperature {
                     //add font-size and zero margin to temperature -> Author Noora
                     font-size: 3.5em;
