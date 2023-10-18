@@ -95,4 +95,8 @@ header .search #icon:hover {
   justify-content: center;
   gap: 20px;
   padding: 20px;
+}
+.container .weather .forecast .tomorrow,
+.container .weather .forecast .day-after {
+  background-color: RGBA(175, 211, 226, 0.2);
 }/*# sourceMappingURL=style.css.map */

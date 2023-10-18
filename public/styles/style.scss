@@ -97,6 +97,12 @@ header {
             justify-content: center;
             gap: 20px;
             padding: 20px;
+
+            .tomorrow,
+            .day-after {
+                // transparent background coloring for forecasts with opacy of 0.2
+                background-color: RGBA(175, 211, 226, 0.2);
+            }
         }
     }
 }
