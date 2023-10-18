@@ -100,4 +100,5 @@ header .search #icon:hover {
 .container .weather .forecast .day-after {
   background-color: RGBA(175, 211, 226, 0.2);
   border-radius: 30px;
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
