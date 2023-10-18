@@ -75,7 +75,7 @@ function updateToday(dataObject) {
     ).textContent = `${dataObject.current.temp_c}°C`;
     document.querySelector(
         ".today .max-min-temp"
-    ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c}°C/${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
+    ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c}°C / ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
     //Change text "Wind: " to icon when it has been selected
     document.querySelector(".today .wind").textContent = `Wind: ${calcWindSpeed(
         dataObject
