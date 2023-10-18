@@ -75,7 +75,7 @@ function updateToday(dataObject) {
     ).textContent = `${dataObject.current.temp_c}°C`;
     document.querySelector(
         ".today .max-min-temp"
-    ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c}°C/${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
+    ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c}°C / ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
     //Change text "Wind: " to icon when it has been selected
     document.querySelector(".today .wind").textContent = `Wind: ${calcWindSpeed(
         dataObject
@@ -92,7 +92,7 @@ function updateTomorrow(dataObject) {
     ).src = `https:${dataObject.condition.icon}`;
     document.querySelector(
         ".tomorrow .max-min-temp"
-    ).textContent = `${dataObject.maxtemp_c}°C/${dataObject.mintemp_c}°C`;
+    ).textContent = `${dataObject.maxtemp_c}°C / ${dataObject.mintemp_c}°C`;
     document.querySelector(
         ".tomorrow .chance-of-rain"
     ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
@@ -109,7 +109,7 @@ function updateDayAfter(dataObject) {
     ).src = `https:${dataObject.condition.icon}`;
     document.querySelector(
         ".day-after .max-min-temp"
-    ).textContent = `${dataObject.maxtemp_c}°C/${dataObject.mintemp_c}°C`;
+    ).textContent = `${dataObject.maxtemp_c}°C / ${dataObject.mintemp_c}°C`;
     document.querySelector(
         ".day-after .chance-of-rain"
     ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
