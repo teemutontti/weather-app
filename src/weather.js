@@ -55,6 +55,7 @@ function parsedData(data) {
 //Function for returning current weather to html <-- Jenny
 function updateToday(dataObject) {
     let day = checkDay(dataObject);
+    let iconUrl = dataObject.current.condition.icon.replace("64x64", "128x128");
 
     //Change website background if its day or night
     if (day) {
@@ -66,8 +67,7 @@ function updateToday(dataObject) {
     //Change website information based on retrieved data from API
     document.querySelector(".today .city").textContent =
         dataObject.location.name;
-    document.querySelector(".today img").src =
-        "http:" + dataObject.current.condition.icon;
+    document.querySelector(".today img").src = "http:" + iconUrl;
     document.querySelector(".today .info").textContent =
         dataObject.current.condition.text;
     document.querySelector(
@@ -122,7 +122,7 @@ function checkDay(dataObject) {
 
 //Function to calculate windspeed
 function calcWindSpeed(dataObject) {
-    //Get windspeed as km/h
+    //Get windspeed as km/hgit
     let windSpeedKph = dataObject.current.wind_kph;
 
     //Transfer into m/s
