@@ -1,6 +1,6 @@
 # Weather App🌤️
 
-![Man with umbrella in a rainy weather](weatherpicture.PNG)
+![Man with umbrella in a rainy weather](/public/pics/weatherpicture.PNG)
 
 <!-- Table of Contents -->
 
