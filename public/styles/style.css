@@ -99,4 +99,5 @@ header .search #icon:hover {
 .container .weather .forecast .tomorrow,
 .container .weather .forecast .day-after {
   background-color: RGBA(175, 211, 226, 0.2);
+  border-radius: 30px;
 }/*# sourceMappingURL=style.css.map */
