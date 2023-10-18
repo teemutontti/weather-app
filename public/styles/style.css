@@ -76,7 +76,8 @@ header .search #icon:hover {
   padding: 10px;
 }
 .container .weather .today h2 {
-  padding: 15px;
+  padding-top: 20px;
+  margin-bottom: 0;
 }
 .container .weather .today .main-view {
   display: flex;
