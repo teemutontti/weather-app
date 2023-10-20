@@ -126,16 +126,22 @@ function updateTomorrow(dataObject) {
 
 //Function for returning day after tomorrows weather to html <-- Noora
 function updateDayAfter(dataObject) {
+    if (temperatureUnit == "C") {
+        document.querySelector(
+            ".day-after .max-min-temp"
+        ).textContent = `${dataObject.maxtemp_c}°C / ${dataObject.mintemp_c}°C`;
+    } else {
+        document.querySelector(
+            ".day-after .max-min-temp"
+        ).textContent = `${dataObject.maxtemp_f}°F / ${dataObject.mintemp_f}°F`;
+    }
+
     document.querySelector(".day-after .date").textContent = `${formatDate(
         dayAftersDate
     )}`;
-
     document.querySelector(
         ".day-after img"
     ).src = `https:${dataObject.condition.icon}`;
-    document.querySelector(
-        ".day-after .max-min-temp"
-    ).textContent = `${dataObject.maxtemp_c}°C / ${dataObject.mintemp_c}°C`;
     document.querySelector(
         ".day-after .chance-of-rain"
     ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
