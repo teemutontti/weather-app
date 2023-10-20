@@ -19,16 +19,13 @@ function getWeather() {
     fetchWeather(city);
 }
 
-function toggleTemperatureUnit(dataArr) {
+function toggleTempUnit() {
     if (temperatureUnit == "C") {
         temperatureUnit = "F";
     } else {
         temperatureUnit = "C";
     }
-
-    updateToday(dataArr.today);
-    updateTomorrow(dataArr.tomorrow);
-    updateDayAfter(dataArr.dayAfter);
+    getWeather();
 }
 
 //Function to call getWeather if enter is pressed in html search form.
@@ -47,7 +44,9 @@ async function fetchWeather(city) {
     let data = await hr.json(); // Parse data to json Author: Noora
     let dataArr = parsedData(data); // Parse data to object Author: Noora
 
-    toggleTemperature(dataArr);
+    updateToday(dataArr.today);
+    updateTomorrow(dataArr.tomorrow);
+    updateDayAfter(dataArr.dayAfter);
 }
 
 //Function for parseing fetched data <-- Noora
