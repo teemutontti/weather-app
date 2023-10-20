@@ -53,6 +53,18 @@ header {
             }
         }
     }
+
+    //styling for temperature unit toggle switch
+    //background of the toggle switch
+    .toggle {
+        position: relative;
+        display: inline-block;
+        width: 100px;
+        height: 52px;
+        background-color: $main-color-1;
+        border-radius: 30px;
+        border: 2px solid gray;
+    }
 }
 
 .container {
