@@ -83,6 +83,11 @@ header {
     .checkbox:checked + .toggle::after {
         left: 49px;
     }
+
+    // hide checkbox
+    .checkbox {
+        display: none;
+    }
 }
 
 .container {
