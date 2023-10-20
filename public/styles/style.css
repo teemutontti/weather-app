@@ -72,7 +72,7 @@ header .slider .toggle {
   height: 50px;
   background-color: #f6f1f1;
   border-radius: 30px;
-  border: 2px solid gray;
+  border: 2px solid #19a7ce;
 }
 header .slider .toggle:after {
   content: "";
@@ -80,7 +80,7 @@ header .slider .toggle:after {
   width: 47px;
   height: 47px;
   border-radius: 50%;
-  background-color: gray;
+  background-color: #19a7ce;
   left: 1px;
   transition: all 0.5s;
 }
