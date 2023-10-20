@@ -4,7 +4,7 @@ const tomorrowsDate = new Date(todaysDate);
 const dayAftersDate = new Date(tomorrowsDate);
 tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
 dayAftersDate.setDate(dayAftersDate.getDate() + 2);
-let temperatureUnit = "C";
+let temperatureUnit = "F";
 
 //Function for returning date in a formatted matter
 const formatDate = (date) => {
@@ -76,17 +76,27 @@ function updateToday(dataObject) {
     }
 
     //Change website information based on retrieved data from API
+
+    if (temperatureUnit == "C") {
+        document.querySelector(
+            ".today .temperature"
+        ).textContent = `${dataObject.current.temp_c}°C`;
+        document.querySelector(
+            ".today .max-min-temp"
+        ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c}°C / ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
+    } else {
+        document.querySelector(
+            ".today .temperature"
+        ).textContent = `${dataObject.current.temp_f}°F`;
+        document.querySelector(
+            ".today .max-min-temp"
+        ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_f}°F / ${dataObject.forecast.forecastday[0].day.mintemp_f}°F`;
+    }
     document.querySelector(".today .city").textContent =
         dataObject.location.name;
     document.querySelector(".today img").src = "http:" + iconUrl;
     document.querySelector(".today .info").textContent =
         dataObject.current.condition.text;
-    document.querySelector(
-        ".today .temperature"
-    ).textContent = `${dataObject.current.temp_c}°C`;
-    document.querySelector(
-        ".today .max-min-temp"
-    ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c}°C / ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
     //Change text "Wind: " to icon when it has been selected
     document.querySelector(".today .wind").textContent = `Wind: ${calcWindSpeed(
         dataObject
