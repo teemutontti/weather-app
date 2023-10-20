@@ -91,6 +91,7 @@ header {
             display: none;
         }
 
+        // position text inside toggle switch
         p {
             font-size: $base-font-size;
             color: $main-color-4;
@@ -98,10 +99,12 @@ header {
             display: inline;
         }
 
+        //float celsius text to the left
         #celsius {
             float: left;
         }
 
+        //float fahrenheit text to the right
         #Fahrenheit {
             float: right;
         }
