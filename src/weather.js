@@ -19,7 +19,7 @@ function getWeather() {
     fetchWeather(city);
 }
 
-function toggleTemperature(dataArr) {
+function toggleTemperatureUnit(dataArr) {
     if (temperatureUnit == "C") {
         temperatureUnit = "F";
     } else {
