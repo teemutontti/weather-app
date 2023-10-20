@@ -53,6 +53,62 @@ header {
             }
         }
     }
+
+    //styling for temperature unit toggle switch
+    .slider {
+        margin: 15px;
+
+        //background of the toggle switch
+        .toggle {
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            background-color: $main-color-1;
+            border-radius: 30px;
+            border: 2px solid $main-color-3;
+        }
+
+        // slider of the toggle swtich
+        .toggle:after {
+            content: "";
+            position: absolute;
+            width: 47px;
+            height: 47px;
+            border-radius: 50%;
+            background-color: $main-color-3;
+            left: 1px;
+            transition: all 0.5s;
+        }
+
+        // Add slider movement on click
+        .checkbox:checked + .toggle::after {
+            left: 49px;
+        }
+
+        // hide checkbox
+        .checkbox {
+            display: none;
+        }
+
+        // position text inside toggle switch
+        p {
+            font-size: $base-font-size;
+            color: $main-color-4;
+            margin: 15px;
+            display: inline;
+        }
+
+        //float celsius text to the left
+        #celsius {
+            float: left;
+        }
+
+        //float fahrenheit text to the right
+        #Fahrenheit {
+            float: right;
+        }
+    }
 }
 
 .container {

@@ -62,6 +62,46 @@ header .search #icon .material-symbols-outlined {
 header .search #icon:hover {
   background-color: rgb(0, 139, 216);
 }
+header .slider {
+  margin: 15px;
+}
+header .slider .toggle {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  background-color: #f6f1f1;
+  border-radius: 30px;
+  border: 2px solid #19a7ce;
+}
+header .slider .toggle:after {
+  content: "";
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  background-color: #19a7ce;
+  left: 1px;
+  transition: all 0.5s;
+}
+header .slider .checkbox:checked + .toggle::after {
+  left: 49px;
+}
+header .slider .checkbox {
+  display: none;
+}
+header .slider p {
+  font-size: 14px;
+  color: #146c94;
+  margin: 15px;
+  display: inline;
+}
+header .slider #celsius {
+  float: left;
+}
+header .slider #Fahrenheit {
+  float: right;
+}
 
 .container .weather {
   background-color: #146c94;
