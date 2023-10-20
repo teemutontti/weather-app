@@ -78,6 +78,11 @@ header {
         left: 1px;
         transition: all 0.5s;
     }
+
+    // Add slider movement on click
+    .checkbox:checked + .toggle::after {
+        left: 49px;
+    }
 }
 
 .container {

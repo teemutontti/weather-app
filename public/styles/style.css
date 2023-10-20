@@ -82,6 +82,9 @@ header .toggle:after {
   left: 1px;
   transition: all 0.5s;
 }
+header .checkbox:checked + .toggle::after {
+  left: 49px;
+}
 
 .container .weather {
   background-color: #146c94;
