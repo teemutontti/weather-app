@@ -62,53 +62,57 @@ header .search #icon .material-symbols-outlined {
 header .search #icon:hover {
   background-color: rgb(0, 139, 216);
 }
-header .slider {
-  margin: 15px;
-}
-header .slider .toggle {
-  position: relative;
-  display: inline-block;
-  width: 100px;
-  height: 50px;
-  background-color: #f6f1f1;
-  border-radius: 30px;
-  border: 2px solid #19a7ce;
-}
-header .slider .toggle:after {
-  content: "";
-  position: absolute;
-  width: 47px;
-  height: 47px;
-  border-radius: 50%;
-  background-color: #19a7ce;
-  left: 1px;
-  transition: all 0.5s;
-}
-header .slider .checkbox:checked + .toggle::after {
-  left: 49px;
-}
-header .slider .checkbox {
-  display: none;
-}
-header .slider p {
-  font-size: 14px;
-  color: #146c94;
-  margin: 15px;
-  display: inline;
-}
-header .slider #celsius {
-  float: left;
-}
-header .slider #Fahrenheit {
-  float: right;
-}
 
 .container .weather {
+  position: relative;
   background-color: #146c94;
   background: linear-gradient(0deg, rgb(20, 108, 148) 28%, rgb(25, 167, 206) 70%, rgb(175, 211, 226) 100%);
   max-width: 400px;
   margin: 30px auto;
   border-radius: 20px;
+}
+.container .weather .slider {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 5px;
+}
+.container .weather .slider .toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  background-color: #f6f1f1;
+  border-radius: 30px;
+  border: 2px solid #19a7ce;
+}
+.container .weather .slider .toggle:after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #19a7ce;
+  left: -1px;
+  transition: all 0.5s;
+}
+.container .weather .slider .checkbox:checked + .toggle::after {
+  left: 25px;
+}
+.container .weather .slider .checkbox {
+  display: none;
+}
+.container .weather .slider p {
+  font-size: 10px;
+  color: #146c94;
+  margin: 5px 5px;
+  display: inline;
+}
+.container .weather .slider #celsius {
+  float: left;
+}
+.container .weather .slider #Fahrenheit {
+  float: right;
 }
 .container .weather .today {
   border-radius: 15px;

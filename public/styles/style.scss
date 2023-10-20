@@ -54,65 +54,11 @@ header {
         }
     }
 
-    //styling for temperature unit toggle switch
-    .slider {
-        margin: 15px;
-
-        //background of the toggle switch
-        .toggle {
-            position: relative;
-            display: inline-block;
-            width: 100px;
-            height: 50px;
-            background-color: $main-color-1;
-            border-radius: 30px;
-            border: 2px solid $main-color-3;
-        }
-
-        // slider of the toggle swtich
-        .toggle:after {
-            content: "";
-            position: absolute;
-            width: 47px;
-            height: 47px;
-            border-radius: 50%;
-            background-color: $main-color-3;
-            left: 1px;
-            transition: all 0.5s;
-        }
-
-        // Add slider movement on click
-        .checkbox:checked + .toggle::after {
-            left: 49px;
-        }
-
-        // hide checkbox
-        .checkbox {
-            display: none;
-        }
-
-        // position text inside toggle switch
-        p {
-            font-size: $base-font-size;
-            color: $main-color-4;
-            margin: 15px;
-            display: inline;
-        }
-
-        //float celsius text to the left
-        #celsius {
-            float: left;
-        }
-
-        //float fahrenheit text to the right
-        #Fahrenheit {
-            float: right;
-        }
-    }
 }
 
 .container {
     .weather {
+        position: relative;
         background-color: $main-color-4;
         background: linear-gradient(
             0deg,
@@ -123,6 +69,65 @@ header {
         max-width: 400px;
         margin: 30px auto; // Auto centers the element
         border-radius: 20px;
+
+        //styling for temperature unit toggle switch
+        .slider {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            margin: 5px;
+
+            //background of the toggle switch
+            .toggle {
+                position: relative;
+                display: inline-block;
+                width: 50px;
+                height: 25px;
+                background-color: $main-color-1;
+                border-radius: 30px;
+                border: 2px solid $main-color-3;
+            }
+
+            // slider of the toggle swtich
+            .toggle:after {
+                content: "";
+                position: absolute;
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                background-color: $main-color-3;
+                left: -1px;
+                transition: all 0.5s;
+            }
+
+            // Add slider movement on click
+            .checkbox:checked + .toggle::after {
+                left: 25px;
+            }
+
+            // hide checkbox
+            .checkbox {
+                display: none;
+            }
+
+            // position text inside toggle switch
+            p {
+                font-size: 10px;
+                color: $main-color-4;
+                margin: 5px 5px;
+                display: inline;
+            }
+
+            //float celsius text to the left
+            #celsius {
+                float: left;
+            }
+
+            //float fahrenheit text to the right
+            #Fahrenheit {
+                float: right;
+            }
+        }
         .today {
             border-radius: 15px;
             //remove box-shadow for gradient background, saved for later as a comment
