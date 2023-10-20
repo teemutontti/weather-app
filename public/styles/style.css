@@ -88,6 +88,18 @@ header .checkbox:checked + .toggle::after {
 header .checkbox {
   display: none;
 }
+header p {
+  font-size: 14px;
+  color: #146c94;
+  margin: 15px;
+  display: inline;
+}
+header #celsius {
+  float: left;
+}
+header #Fahrenheit {
+  float: right;
+}
 
 .container .weather {
   background-color: #146c94;

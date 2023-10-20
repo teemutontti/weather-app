@@ -88,6 +88,21 @@ header {
     .checkbox {
         display: none;
     }
+
+    p {
+        font-size: $base-font-size;
+        color: $main-color-4;
+        margin: 15px;
+        display: inline;
+    }
+
+    #celsius {
+        float: left;
+    }
+
+    #Fahrenheit {
+        float: right;
+    }
 }
 
 .container {
