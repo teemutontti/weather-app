@@ -4,6 +4,7 @@ const tomorrowsDate = new Date(todaysDate);
 const dayAftersDate = new Date(tomorrowsDate);
 tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
 dayAftersDate.setDate(dayAftersDate.getDate() + 2);
+let temperatureUnit = "F";
 
 //Function for returning date in a formatted matter
 const formatDate = (date) => {
@@ -16,6 +17,18 @@ function getWeather() {
     let city = document.getElementById("field").value;
 
     fetchWeather(city);
+}
+
+function toggleTemperature(dataArr) {
+    if (temperatureUnit == "C") {
+        temperatureUnit = "F";
+    } else {
+        temperatureUnit = "C";
+    }
+
+    updateToday(dataArr.today);
+    updateTomorrow(dataArr.tomorrow);
+    updateDayAfter(dataArr.dayAfter);
 }
 
 //Function to call getWeather if enter is pressed in html search form.
@@ -34,9 +47,7 @@ async function fetchWeather(city) {
     let data = await hr.json(); // Parse data to json Author: Noora
     let dataArr = parsedData(data); // Parse data to object Author: Noora
 
-    updateToday(dataArr.today); // Update data to HTML Author: Mikko
-    updateTomorrow(dataArr.tomorrow); // Update data to HTML Author: Teemu
-    updateDayAfter(dataArr.dayAfter); // Update data to HTML Author: Noora
+    toggleTemperature(dataArr);
 }
 
 //Function for parseing fetched data <-- Noora
@@ -65,17 +76,27 @@ function updateToday(dataObject) {
     }
 
     //Change website information based on retrieved data from API
+
+    if (temperatureUnit == "C") {
+        document.querySelector(
+            ".today .temperature"
+        ).textContent = `${dataObject.current.temp_c}°C`;
+        document.querySelector(
+            ".today .max-min-temp"
+        ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c}°C / ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
+    } else {
+        document.querySelector(
+            ".today .temperature"
+        ).textContent = `${dataObject.current.temp_f}°F`;
+        document.querySelector(
+            ".today .max-min-temp"
+        ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_f}°F / ${dataObject.forecast.forecastday[0].day.mintemp_f}°F`;
+    }
     document.querySelector(".today .city").textContent =
         dataObject.location.name;
     document.querySelector(".today img").src = "http:" + iconUrl;
     document.querySelector(".today .info").textContent =
         dataObject.current.condition.text;
-    document.querySelector(
-        ".today .temperature"
-    ).textContent = `${dataObject.current.temp_c}°C`;
-    document.querySelector(
-        ".today .max-min-temp"
-    ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c}°C / ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
     //Change text "Wind: " to icon when it has been selected
     document.querySelector(".today .wind").textContent = `Wind: ${calcWindSpeed(
         dataObject
@@ -84,15 +105,21 @@ function updateToday(dataObject) {
 
 //Function for returning tomorrows weather to html <-- Teemu
 function updateTomorrow(dataObject) {
+    if (temperatureUnit == "C") {
+        document.querySelector(
+            ".tomorrow .max-min-temp"
+        ).textContent = `${dataObject.maxtemp_c}°C / ${dataObject.mintemp_c}°C`;
+    } else {
+        document.querySelector(
+            ".tomorrow .max-min-temp"
+        ).textContent = `${dataObject.maxtemp_f}°F / ${dataObject.mintemp_f}°F`;
+    }
     document.querySelector(".tomorrow .date").textContent = `${formatDate(
         tomorrowsDate
     )}`;
     document.querySelector(
         ".tomorrow img"
     ).src = `https:${dataObject.condition.icon}`;
-    document.querySelector(
-        ".tomorrow .max-min-temp"
-    ).textContent = `${dataObject.maxtemp_c}°C / ${dataObject.mintemp_c}°C`;
     document.querySelector(
         ".tomorrow .chance-of-rain"
     ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
