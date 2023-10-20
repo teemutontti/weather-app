@@ -127,8 +127,21 @@ header .slider #Fahrenheit {
   font-size: 3.5em;
   margin: 0px;
 }
-.container .weather .today .wind {
-  padding: 10px;
+.container .weather .today .secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5px;
+  padding: 5px;
+}
+.container .weather .today .secondary .information-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.container .weather .today .secondary .information-box img {
+  max-width: 20%;
+  height: auto;
 }
 .container .weather .forecast {
   display: flex;
