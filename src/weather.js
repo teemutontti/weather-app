@@ -19,6 +19,18 @@ function getWeather() {
     fetchWeather(city);
 }
 
+function toggleTemperature(dataArr) {
+    if (temperatureUnit == "C") {
+        temperatureUnit = "F";
+    } else {
+        temperatureUnit = "C";
+    }
+
+    updateToday(dataArr.today);
+    updateTomorrow(dataArr.tomorrow);
+    updateDayAfter(dataArr.dayAfter);
+}
+
 //Function to call getWeather if enter is pressed in html search form.
 document.getElementById("field").addEventListener("keyup", function (event) {
     if (event.key === "Enter") {
