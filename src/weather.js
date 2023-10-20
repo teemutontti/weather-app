@@ -105,15 +105,21 @@ function updateToday(dataObject) {
 
 //Function for returning tomorrows weather to html <-- Teemu
 function updateTomorrow(dataObject) {
+    if (temperatureUnit == "C") {
+        document.querySelector(
+            ".tomorrow .max-min-temp"
+        ).textContent = `${dataObject.maxtemp_c}°C / ${dataObject.mintemp_c}°C`;
+    } else {
+        document.querySelector(
+            ".tomorrow .max-min-temp"
+        ).textContent = `${dataObject.maxtemp_f}°F / ${dataObject.mintemp_f}°F`;
+    }
     document.querySelector(".tomorrow .date").textContent = `${formatDate(
         tomorrowsDate
     )}`;
     document.querySelector(
         ".tomorrow img"
     ).src = `https:${dataObject.condition.icon}`;
-    document.querySelector(
-        ".tomorrow .max-min-temp"
-    ).textContent = `${dataObject.maxtemp_c}°C / ${dataObject.mintemp_c}°C`;
     document.querySelector(
         ".tomorrow .chance-of-rain"
     ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
