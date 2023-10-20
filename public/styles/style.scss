@@ -87,6 +87,13 @@ header {
                     margin: 0px;
                 }
             }
+
+            .secondary {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 5px;
+                padding: 5px;
+            }
         }
         .forecast {
             display: flex;
