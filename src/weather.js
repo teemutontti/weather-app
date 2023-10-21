@@ -149,7 +149,7 @@ function updateDayAfter(dataObject) {
     ).src = `https:${dataObject.condition.icon}`;
     document.querySelector(
         ".day-after .chance-of-rain"
-    ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
+    ).textContent = `${dataObject.daily_chance_of_rain}%`;
 }
 
 // Function that checks if current time is day or night and returns true or false
