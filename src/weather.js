@@ -5,6 +5,7 @@ const dayAftersDate = new Date(tomorrowsDate);
 tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
 dayAftersDate.setDate(dayAftersDate.getDate() + 2);
 let temperatureUnit = "F";
+let windSpeedUnit = "mi/s";
 
 //Function for returning date in a formatted matter
 const formatDate = (date) => {
@@ -19,11 +20,13 @@ function getWeather() {
     fetchWeather(city);
 }
 
-function toggleTempUnit() {
-    if (temperatureUnit == "C") {
+function toggleUnits() {
+    if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
         temperatureUnit = "F";
+        windSpeedUnit = "mi/s";
     } else {
         temperatureUnit = "C";
+        windSpeedUnit = "m/s";
     }
     getWeather();
 }
@@ -76,13 +79,16 @@ function updateToday(dataObject) {
 
     //Change website information based on retrieved data from API
 
-    if (temperatureUnit == "C") {
+    if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
         document.querySelector(
             ".today .temperature"
         ).textContent = `${dataObject.current.temp_c}°C`;
         document.querySelector(
             ".today .max-min-temp"
         ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c}°C / ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
+        document.querySelector(
+            ".today .wind"
+        ).textContent = `Wind: ${calcWindSpeedFromKph(dataObject)} m/s`;
     } else {
         document.querySelector(
             ".today .temperature"
@@ -90,16 +96,15 @@ function updateToday(dataObject) {
         document.querySelector(
             ".today .max-min-temp"
         ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_f}°F / ${dataObject.forecast.forecastday[0].day.mintemp_f}°F`;
+        document.querySelector(
+            ".today .wind"
+        ).textContent = `Wind: ${calcWindSpeedFromMph(dataObject)} mi/s`;
     }
     document.querySelector(".today .city").textContent =
         dataObject.location.name;
     document.querySelector(".today img").src = "http:" + iconUrl;
     document.querySelector(".today .info").textContent =
         dataObject.current.condition.text;
-    //Change text "Wind: " to icon when it has been selected
-    document.querySelector(".today .wind").textContent = `Wind: ${calcWindSpeed(
-        dataObject
-    )} m/s`;
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
@@ -153,8 +158,8 @@ function checkDay(dataObject) {
 }
 
 //Function to calculate windspeed
-function calcWindSpeed(dataObject) {
-    //Get windspeed as km/hgit
+function calcWindSpeedFromKph(dataObject) {
+    //Get windspeed as km/h
     let windSpeedKph = dataObject.current.wind_kph;
 
     //Transfer into m/s
@@ -162,4 +167,14 @@ function calcWindSpeed(dataObject) {
 
     //Return results with .1 decimal accuracity
     return windSpeedMs.toFixed(1);
+}
+function calcWindSpeedFromMph(dataObject) {
+    //Get windspeed as mi/h
+    let windSpeedMph = dataObject.current.wind_mph;
+
+    //Transfer into mi/s
+    let windSpeedMis = (windSpeedMph * windSpeedMph) / 3600;
+
+    //Return results with .1 decimal accuracity
+    return windSpeedMis.toFixed(1);
 }
