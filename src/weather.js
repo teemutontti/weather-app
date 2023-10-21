@@ -97,9 +97,9 @@ function updateToday(dataObject) {
     document.querySelector(".today .info").textContent =
         dataObject.current.condition.text;
     //Change text "Wind: " to icon when it has been selected
-    document.querySelector(".today .wind").textContent = `Wind: ${calcWindSpeed(
-        dataObject
-    )} m/s`;
+    document.querySelector(
+        ".today .wind"
+    ).textContent = `Wind: ${calcWindSpeedFromKph(dataObject)} m/s`;
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
@@ -153,7 +153,7 @@ function checkDay(dataObject) {
 }
 
 //Function to calculate windspeed
-function calcWindSpeed(dataObject) {
+function calcWindSpeedFromKph(dataObject) {
     //Get windspeed as km/hgit
     let windSpeedKph = dataObject.current.wind_kph;
 
