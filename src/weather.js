@@ -20,7 +20,7 @@ function getWeather() {
     fetchWeather(city);
 }
 
-function toggleTempUnit() {
+function toggleUnits() {
     if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
         temperatureUnit = "F";
         windSpeedUnit = "mi/s";
@@ -173,7 +173,7 @@ function calcWindSpeedFromMph(dataObject) {
     let windSpeedMph = dataObject.current.wind_mph;
 
     //Transfer into mi/s
-    let windSpeedMis = windSpeedMph / 3600;
+    let windSpeedMis = (windSpeedMph * windSpeedMph) / 3600;
 
     //Return results with .1 decimal accuracity
     return windSpeedMis.toFixed(1);
