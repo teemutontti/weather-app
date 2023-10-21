@@ -154,7 +154,7 @@ function checkDay(dataObject) {
 
 //Function to calculate windspeed
 function calcWindSpeedFromKph(dataObject) {
-    //Get windspeed as km/hgit
+    //Get windspeed as km/h
     let windSpeedKph = dataObject.current.wind_kph;
 
     //Transfer into m/s
@@ -162,4 +162,14 @@ function calcWindSpeedFromKph(dataObject) {
 
     //Return results with .1 decimal accuracity
     return windSpeedMs.toFixed(1);
+}
+function calcWindSpeedFromMph(dataObject) {
+    //Get windspeed as mi/h
+    let windSpeedMph = dataObject.current.wind_mph;
+
+    //Transfer into mi/s
+    let windSpeedMis = windSpeedMph / 3600;
+
+    //Return results with .1 decimal accuracity
+    return windSpeedMis.toFixed(1);
 }
