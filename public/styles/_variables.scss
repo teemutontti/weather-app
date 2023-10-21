@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700");
 //google font montserrat
 
-//alternative font import
+//alternative font import for title
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200;500");
 
-// alternative font to be tested
+// alternative font to be tested on title
 $alternative-font: "Asap Condensed";
 
 $header-font-size: 28px;
@@ -23,6 +23,13 @@ $main-color-4: #146c94;
     font-size: $header-font-size;
     font-family: $base-font;
     color: $base-font-color;
+
+    // add styling to header title
+    h1 {
+        font-family: $alternative-font;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
 }
 
 %base-text-style {
