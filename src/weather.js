@@ -79,13 +79,16 @@ function updateToday(dataObject) {
 
     //Change website information based on retrieved data from API
 
-    if (temperatureUnit == "C") {
+    if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
         document.querySelector(
             ".today .temperature"
         ).textContent = `${dataObject.current.temp_c}°C`;
         document.querySelector(
             ".today .max-min-temp"
         ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c}°C / ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
+        document.querySelector(
+            ".today .wind"
+        ).textContent = `Wind: ${calcWindSpeedFromKph(dataObject)} m/s`;
     } else {
         document.querySelector(
             ".today .temperature"
@@ -93,16 +96,15 @@ function updateToday(dataObject) {
         document.querySelector(
             ".today .max-min-temp"
         ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_f}°F / ${dataObject.forecast.forecastday[0].day.mintemp_f}°F`;
+        document.querySelector(
+            ".today .wind"
+        ).textContent = `Wind: ${calcWindSpeedFromMph(dataObject)} mi/s`;
     }
     document.querySelector(".today .city").textContent =
         dataObject.location.name;
     document.querySelector(".today img").src = "http:" + iconUrl;
     document.querySelector(".today .info").textContent =
         dataObject.current.condition.text;
-    //Change text "Wind: " to icon when it has been selected
-    document.querySelector(
-        ".today .wind"
-    ).textContent = `Wind: ${calcWindSpeedFromKph(dataObject)} m/s`;
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
