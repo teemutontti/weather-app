@@ -88,7 +88,7 @@ function updateToday(dataObject) {
         ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c}°C / ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
         document.querySelector(
             ".today .wind"
-        ).textContent = `Wind: ${calcWindSpeedFromKph(dataObject)} m/s`;
+        ).textContent = `${calcWindSpeedFromKph(dataObject)} m/s`;
     } else {
         document.querySelector(
             ".today .temperature"
@@ -98,7 +98,7 @@ function updateToday(dataObject) {
         ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_f}°F / ${dataObject.forecast.forecastday[0].day.mintemp_f}°F`;
         document.querySelector(
             ".today .wind"
-        ).textContent = `Wind: ${calcWindSpeedFromMph(dataObject)} mi/s`;
+        ).textContent = `${calcWindSpeedFromMph(dataObject)} mi/s`;
     }
     document.querySelector(".today .city").textContent =
         dataObject.location.name;
