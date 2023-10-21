@@ -3,7 +3,10 @@
 //google font montserrat
 
 //alternative font
-@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Unbounded:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200");
+
+//
+$alternative-font: "Asap Condensed";
 
 $header-font-size: 28px;
 $base-font-color: #f6f1f1;
