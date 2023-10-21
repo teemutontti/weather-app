@@ -21,10 +21,12 @@ function getWeather() {
 }
 
 function toggleTempUnit() {
-    if (temperatureUnit == "C") {
+    if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
         temperatureUnit = "F";
+        windSpeedUnit = "mi/s";
     } else {
         temperatureUnit = "C";
+        windSpeedUnit = "m/s";
     }
     getWeather();
 }
