@@ -106,6 +106,7 @@ header .search #icon:hover {
 }
 .container .weather .slider p {
   font-size: 10px;
+  font-weight: 700;
   color: #146c94;
   margin: 5px 5px;
   display: inline;
