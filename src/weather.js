@@ -126,7 +126,7 @@ function updateTomorrow(dataObject) {
     ).src = `https:${dataObject.condition.icon}`;
     document.querySelector(
         ".tomorrow .chance-of-rain"
-    ).textContent = `Chance of rain: ${dataObject.daily_chance_of_rain}%`;
+    ).textContent = `${dataObject.daily_chance_of_rain}%`;
 }
 
 //Function for returning day after tomorrows weather to html <-- Noora
