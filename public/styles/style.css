@@ -1,6 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700");
-@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700");
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200;500");
 header {
   font-size: 28px;
   font-family: "Montserrat";
