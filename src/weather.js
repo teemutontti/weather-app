@@ -5,6 +5,7 @@ const dayAftersDate = new Date(tomorrowsDate);
 tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
 dayAftersDate.setDate(dayAftersDate.getDate() + 2);
 let temperatureUnit = "F";
+let windSpeedUnit = "mi/s";
 
 //Function for returning date in a formatted matter
 const formatDate = (date) => {
