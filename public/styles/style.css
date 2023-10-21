@@ -110,6 +110,7 @@ header .search #icon:hover {
   color: #146c94;
   margin: 5px 5px;
   display: inline;
+  opacity: 0.7;
 }
 .container .weather .slider #celsius {
   float: left;
