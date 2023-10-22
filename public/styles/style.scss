@@ -183,11 +183,16 @@ header {
                 border-radius: 30px;
                 padding: 10px;
 
+                h3 {
+                    margin-bottom: 5px;
+                }
+
                 .information-box {
                     display: flex;
-                    flex-direction: column;
                     align-items: center;
                     padding: 5px;
+                    gap: 10px;
+                    justify-content: center;
                     img {
                         max-width: 20%;
                         height: auto;
