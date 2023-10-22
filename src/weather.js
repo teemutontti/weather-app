@@ -85,7 +85,7 @@ function updateToday(dataObject) {
         ).textContent = `${dataObject.current.temp_c}°C`;
         document.querySelector(
             ".today .max-min-temp"
-        ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c}°C / ${dataObject.forecast.forecastday[0].day.mintemp_c}°C`;
+        ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c} / ${dataObject.forecast.forecastday[0].day.mintemp_c} °C`;
         document.querySelector(
             ".today .wind"
         ).textContent = `${calcWindSpeedFromKph(dataObject)} m/s`;
@@ -95,7 +95,7 @@ function updateToday(dataObject) {
         ).textContent = `${dataObject.current.temp_f}°F`;
         document.querySelector(
             ".today .max-min-temp"
-        ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_f}°F / ${dataObject.forecast.forecastday[0].day.mintemp_f}°F`;
+        ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_f} / ${dataObject.forecast.forecastday[0].day.mintemp_f} °F`;
         document.querySelector(
             ".today .wind"
         ).textContent = `${calcWindSpeedFromMph(dataObject)} mi/s`;
@@ -112,11 +112,11 @@ function updateTomorrow(dataObject) {
     if (temperatureUnit == "C") {
         document.querySelector(
             ".tomorrow .max-min-temp"
-        ).textContent = `${dataObject.maxtemp_c}°C / ${dataObject.mintemp_c}°C`;
+        ).textContent = `${dataObject.maxtemp_c} / ${dataObject.mintemp_c} °C`;
     } else {
         document.querySelector(
             ".tomorrow .max-min-temp"
-        ).textContent = `${dataObject.maxtemp_f}°F / ${dataObject.mintemp_f}°F`;
+        ).textContent = `${dataObject.maxtemp_f} / ${dataObject.mintemp_f} °F`;
     }
     document.querySelector(".tomorrow .date").textContent = `${formatDate(
         tomorrowsDate
@@ -134,11 +134,11 @@ function updateDayAfter(dataObject) {
     if (temperatureUnit == "C") {
         document.querySelector(
             ".day-after .max-min-temp"
-        ).textContent = `${dataObject.maxtemp_c}°C / ${dataObject.mintemp_c}°C`;
+        ).textContent = `${dataObject.maxtemp_c} / ${dataObject.mintemp_c} °C`;
     } else {
         document.querySelector(
             ".day-after .max-min-temp"
-        ).textContent = `${dataObject.maxtemp_f}°F / ${dataObject.mintemp_f}°F`;
+        ).textContent = `${dataObject.maxtemp_f} / ${dataObject.mintemp_f} °F`;
     }
 
     document.querySelector(".day-after .date").textContent = `${formatDate(
