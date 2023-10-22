@@ -53,7 +53,6 @@ header {
             }
         }
     }
-
 }
 
 .container {
@@ -86,6 +85,7 @@ header {
                 background-color: $main-color-1;
                 border-radius: 30px;
                 border: 2px solid $main-color-3;
+                opacity: 0.8;
             }
 
             // slider of the toggle swtich
@@ -113,6 +113,7 @@ header {
             // position text inside toggle switch
             p {
                 font-size: 10px;
+                font-weight: 700;
                 color: $main-color-4;
                 margin: 5px 5px;
                 display: inline;
