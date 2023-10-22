@@ -151,8 +151,7 @@ header {
             }
 
             .secondary {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
+                display: flex;
                 margin: 5px;
                 padding: 5px;
 
