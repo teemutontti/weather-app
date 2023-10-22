@@ -152,6 +152,7 @@ header {
 
             .secondary {
                 display: flex;
+                justify-content: center;
                 margin: 5px;
                 padding: 5px;
 
@@ -160,10 +161,10 @@ header {
                     flex-direction: column;
                     align-items: center;
                     padding: 5px;
-                    width: 100px;
+                    max-width: 120px;
 
                     img {
-                        max-width: 20%;
+                        max-width: 30%;
                         height: auto;
                     }
                 }
