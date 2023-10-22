@@ -180,6 +180,17 @@ header {
                 background-color: RGBA(175, 211, 226, 0.2);
                 border-radius: 30px;
                 padding: 10px;
+
+                .information-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 5px;
+                    img {
+                        max-width: 20%;
+                        height: auto;
+                    }
+                }
             }
         }
     }
