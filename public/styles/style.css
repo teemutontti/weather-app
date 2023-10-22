@@ -139,6 +139,9 @@ header .search #icon:hover {
   font-size: 3.5em;
   margin: 0px;
 }
+.container .weather .today .info {
+  font-size: 18px;
+}
 .container .weather .today .secondary {
   display: flex;
   justify-content: center;
