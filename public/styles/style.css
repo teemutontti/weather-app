@@ -202,4 +202,25 @@ header .search #icon:hover {
 .container .weather .forecast .day-after .information-box img {
   max-width: 30%;
   height: auto;
+}
+
+@media only screen and (min-width: 700px) {
+  header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    margin-top: 30px;
+  }
+  header h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 30px;
+    position: absolute;
+    left: 30px;
+  }
+  header .search {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 }/*# sourceMappingURL=style.css.map */
