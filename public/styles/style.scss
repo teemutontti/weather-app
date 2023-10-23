@@ -202,10 +202,10 @@ header {
 
                 .information-box {
                     display: flex;
-                    align-items: center;
+                    align-items: left;
                     padding: 5px;
                     gap: 10px;
-                    justify-content: center;
+                    justify-content: left;
                     img {
                         //add background to icons to make them more visible
                         @extend %icon-background-style;

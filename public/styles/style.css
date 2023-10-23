@@ -189,10 +189,10 @@ header .search #icon:hover {
 .container .weather .forecast .tomorrow .information-box,
 .container .weather .forecast .day-after .information-box {
   display: flex;
-  align-items: center;
+  align-items: left;
   padding: 5px;
   gap: 10px;
-  justify-content: center;
+  justify-content: left;
 }
 .container .weather .forecast .tomorrow .information-box img,
 .container .weather .forecast .day-after .information-box img {
