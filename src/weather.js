@@ -46,11 +46,11 @@ async function fetchWeather(city) {
 
     let hr = await fetch(url);
     let data = await hr.json();
-    let dataArr = parsedData(data);
+    let dataObj = parsedData(data);
 
-    updateToday(dataArr.today);
-    updateTomorrow(dataArr.tomorrow);
-    updateDayAfter(dataArr.dayAfter);
+    updateToday(dataObj.today);
+    updateTomorrow(dataObj.tomorrow);
+    updateDayAfter(dataObj.dayAfter);
 }
 
 //Function for parseing fetched data <-- Noora
