@@ -20,6 +20,7 @@ function getWeather() {
     fetchWeather(city);
 }
 
+// Change displayed units when this function is called
 function toggleUnits() {
     if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
         temperatureUnit = "F";
@@ -44,12 +45,12 @@ async function fetchWeather(city) {
     let url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`;
 
     let hr = await fetch(url);
-    let data = await hr.json(); // Parse data to json Author: Noora
-    let dataArr = parsedData(data); // Parse data to object Author: Noora
+    let data = await hr.json();
+    let dataObj = parsedData(data);
 
-    updateToday(dataArr.today);
-    updateTomorrow(dataArr.tomorrow);
-    updateDayAfter(dataArr.dayAfter);
+    updateToday(dataObj.today);
+    updateTomorrow(dataObj.tomorrow);
+    updateDayAfter(dataObj.dayAfter);
 }
 
 //Function for parseing fetched data <-- Noora
@@ -78,7 +79,6 @@ function updateToday(dataObject) {
     }
 
     //Change website information based on retrieved data from API
-
     if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
         document.querySelector(
             ".today .temperature"
@@ -157,7 +157,7 @@ function checkDay(dataObject) {
     return dataObject.current.is_day == 1 ? true : false;
 }
 
-//Function to calculate windspeed
+//Function to calculate windspeed to meters per second
 function calcWindSpeedFromKph(dataObject) {
     //Get windspeed as km/h
     let windSpeedKph = dataObject.current.wind_kph;
@@ -168,6 +168,8 @@ function calcWindSpeedFromKph(dataObject) {
     //Return results with .1 decimal accuracity
     return windSpeedMs.toFixed(1);
 }
+
+//Function to calculate windspeed to miles per second
 function calcWindSpeedFromMph(dataObject) {
     //Get windspeed as mi/h
     let windSpeedMph = dataObject.current.wind_mph;
