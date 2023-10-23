@@ -20,6 +20,7 @@ function getWeather() {
     fetchWeather(city);
 }
 
+// Change displayed units when this function is called
 function toggleUnits() {
     if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
         temperatureUnit = "F";
