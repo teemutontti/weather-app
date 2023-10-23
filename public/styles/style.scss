@@ -12,6 +12,8 @@ body {
 }
 
 header {
+    display: flex;
+    flex-direction: column;
     @extend %header-style;
     .search {
         height: 35px;
