@@ -147,6 +147,7 @@ header {
 
             .main-view {
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 .temperature {
