@@ -165,10 +165,13 @@ header {
                     flex-direction: column;
                     align-items: center;
                     padding: 5px;
+
                     max-width: 120px;
 
                     img {
-                        max-width: 30%;
+                        //add background to icons to make them more visible
+                        @extend %icon-background-style;
+                        max-width: 40%;
                         height: auto;
                     }
                 }
@@ -198,7 +201,9 @@ header {
                     gap: 10px;
                     justify-content: center;
                     img {
-                        max-width: 20%;
+                        //add background to icons to make them more visible
+                        @extend %icon-background-style;
+                        max-width: 30%;
                         height: auto;
                     }
                 }

@@ -37,3 +37,9 @@ $main-color-4: #146c94;
     font-family: $base-font;
     color: $base-font-color;
 }
+
+%icon-background-style {
+    background-color: RGBA(246, 241, 241, 0.6);
+    border-radius: 30px;
+    padding: 10px;
+}
