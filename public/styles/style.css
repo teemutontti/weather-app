@@ -117,10 +117,10 @@ header .search #icon:hover {
   display: inline;
 }
 .container .weather .slider #celsius {
-  float: left;
+  float: right;
 }
 .container .weather .slider #Fahrenheit {
-  float: right;
+  float: left;
 }
 .container .weather .today {
   border-radius: 15px;
