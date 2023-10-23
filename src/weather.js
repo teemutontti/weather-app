@@ -79,7 +79,6 @@ function updateToday(dataObject) {
     }
 
     //Change website information based on retrieved data from API
-
     if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
         document.querySelector(
             ".today .temperature"
@@ -158,7 +157,7 @@ function checkDay(dataObject) {
     return dataObject.current.is_day == 1 ? true : false;
 }
 
-//Function to calculate windspeed
+//Function to calculate windspeed to meters per second
 function calcWindSpeedFromKph(dataObject) {
     //Get windspeed as km/h
     let windSpeedKph = dataObject.current.wind_kph;
@@ -169,6 +168,8 @@ function calcWindSpeedFromKph(dataObject) {
     //Return results with .1 decimal accuracity
     return windSpeedMs.toFixed(1);
 }
+
+//Function to calculate windspeed to miles per second
 function calcWindSpeedFromMph(dataObject) {
     //Get windspeed as mi/h
     let windSpeedMph = dataObject.current.wind_mph;
