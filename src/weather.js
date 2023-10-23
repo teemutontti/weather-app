@@ -4,8 +4,8 @@ const tomorrowsDate = new Date(todaysDate);
 const dayAftersDate = new Date(tomorrowsDate);
 tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
 dayAftersDate.setDate(dayAftersDate.getDate() + 2);
-let temperatureUnit = "F";
-let windSpeedUnit = "mi/s";
+let temperatureUnit = "C";
+let windSpeedUnit = "m/s";
 
 //Function for returning date in a formatted matter
 const formatDate = (date) => {
