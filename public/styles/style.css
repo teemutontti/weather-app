@@ -112,6 +112,10 @@ header .search #icon:hover {
 }
 .container .weather .slider .checkbox:checked + .toggle::after {
   left: 25px;
+  background-color: #146c94;
+}
+.container .weather .slider .checkbox:checked + .toggle {
+  border: 2px solid #146c94;
 }
 .container .weather .slider .checkbox {
   display: none;

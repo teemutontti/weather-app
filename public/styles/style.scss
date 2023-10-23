@@ -103,6 +103,12 @@ header {
             // Add slider movement on click
             .checkbox:checked + .toggle::after {
                 left: 25px;
+                background-color: $main-color-4;
+            }
+
+            //change switch border color when checkbox is checked
+            .checkbox:checked + .toggle {
+                border: 2px solid $main-color-4;
             }
 
             // hide checkbox
