@@ -9,6 +9,7 @@ header h1 {
   font-family: "Asap Condensed";
   font-weight: 500;
   letter-spacing: 2px;
+  margin-bottom: 15px;
 }
 
 body {
@@ -170,7 +171,7 @@ header .search {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
 }
 .container .weather .forecast .tomorrow,
 .container .weather .forecast .day-after {
