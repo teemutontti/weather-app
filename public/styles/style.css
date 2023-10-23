@@ -1,201 +1,211 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700");
 @import url("https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200;500");
 header {
-  font-size: 28px;
-  font-family: "Montserrat";
-  color: #f6f1f1;
+    font-size: 28px;
+    font-family: "Montserrat";
+    color: #f6f1f1;
 }
 header h1 {
-  font-family: "Asap Condensed";
-  font-weight: 500;
-  letter-spacing: 2px;
+    font-family: "Asap Condensed";
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 body {
-  font-size: 14px;
-  font-family: "Montserrat";
-  color: #f6f1f1;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: #f6f1f1;
 }
 
 .container .weather .forecast .tomorrow .information-box img,
-.container .weather .forecast .day-after .information-box img, .container .weather .today .secondary .information-box img {
-  background-color: RGBA(246, 241, 241, 0.6);
-  border-radius: 30px;
-  padding: 10px;
+.container .weather .forecast .day-after .information-box img,
+.container .weather .today .secondary .information-box img {
+    background-color: RGBA(246, 241, 241, 0.6);
+    border-radius: 30px;
+    padding: 10px;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0px;
-  background-image: url("../pics/daybg.webp");
-  text-align: center;
+    margin: 0px;
+    background-image: url("../pics/daybg.webp");
+    text-align: center;
 }
 
 header .search {
-  height: 35px;
-  max-width: 235px;
-  margin: 0px auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
+    height: 35px;
+    max-width: 235px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
 }
 header .search #field {
-  width: 200px;
-  height: 100%;
-  border: none;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
-  padding-left: 10px;
-  background-color: #146c94;
-  color: #f6f1f1;
+    width: 200px;
+    height: 100%;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding-left: 10px;
+    background-color: #146c94;
+    color: #f6f1f1;
 }
 header .search #field::-moz-placeholder {
-  color: rgba(246, 241, 241, 0.7);
+    color: rgba(246, 241, 241, 0.7);
 }
 header .search #field::placeholder {
-  color: rgba(246, 241, 241, 0.7);
+    color: rgba(246, 241, 241, 0.7);
 }
 header .search #icon {
-  background-color: rgb(0, 162, 255);
-  border: none;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-  height: 100%;
-  width: 35px;
+    background-color: rgb(0, 162, 255);
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 100%;
+    width: 35px;
 }
 header .search #icon .material-symbols-outlined {
-  color: white;
-  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
+    color: white;
+    font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 24;
 }
 header .search #icon:hover {
-  background-color: rgb(0, 139, 216);
+    background-color: rgb(0, 139, 216);
 }
 
 .container .weather {
-  position: relative;
-  background-color: #146c94;
-  background: linear-gradient(0deg, rgb(20, 108, 148) 28%, rgb(25, 167, 206) 70%, rgb(175, 211, 226) 100%);
-  max-width: 400px;
-  margin: 30px auto;
-  border-radius: 20px;
+    position: relative;
+    background-color: #146c94;
+    background: linear-gradient(
+        0deg,
+        rgb(20, 108, 148) 28%,
+        rgb(25, 167, 206) 70%,
+        rgb(175, 211, 226) 100%
+    );
+    max-width: 400px;
+    margin: 30px auto;
+    border-radius: 20px;
 }
 .container .weather .slider {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  margin: 5px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 5px;
 }
 .container .weather .slider .toggle {
-  position: relative;
-  display: inline-block;
-  width: 50px;
-  height: 25px;
-  background-color: #f6f1f1;
-  border-radius: 30px;
-  border: 2px solid #19a7ce;
-  opacity: 0.8;
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+    background-color: #f6f1f1;
+    border-radius: 30px;
+    border: 2px solid #19a7ce;
+    opacity: 0.8;
 }
 .container .weather .slider .toggle:after {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background-color: #19a7ce;
-  left: -1px;
-  transition: all 0.5s;
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #19a7ce;
+    left: -1px;
+    transition: all 0.5s;
 }
 .container .weather .slider .checkbox:checked + .toggle::after {
-  left: 25px;
-  background-color: #146c94;
+    left: 25px;
+    background-color: #146c94;
 }
 .container .weather .slider .checkbox:checked + .toggle {
-  border: 2px solid #146c94;
+    border: 2px solid #146c94;
 }
 .container .weather .slider .checkbox {
-  display: none;
+    display: none;
 }
 .container .weather .slider p {
-  font-size: 10px;
-  font-weight: 700;
-  color: #146c94;
-  margin: 5px 5px;
-  display: inline;
+    font-size: 10px;
+    font-weight: 700;
+    color: #146c94;
+    margin: 5px 5px;
+    display: inline;
 }
 .container .weather .slider #celsius {
-  float: right;
+    float: right;
 }
 .container .weather .slider #Fahrenheit {
-  float: left;
+    float: left;
 }
 .container .weather .today {
-  border-radius: 15px;
-  padding: 10px;
+    border-radius: 15px;
+    padding: 10px;
 }
 .container .weather .today h2 {
-  padding-top: 20px;
-  margin-bottom: 0;
+    padding-top: 20px;
+    margin-bottom: 0;
 }
 .container .weather .today .main-view {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .container .weather .today .main-view .temperature {
-  font-size: 3.5em;
-  margin: 0px;
+    font-size: 6em;
+    margin: 0px;
+    margin-top: 30px;
 }
-.container .weather .today .info {
-  font-size: 18px;
+.container .weather .today .main-view .info-box {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
 }
 .container .weather .today .secondary {
-  display: flex;
-  justify-content: center;
-  margin: 5px;
-  padding: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 5px;
 }
 .container .weather .today .secondary .information-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5px;
-  max-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    max-width: 120px;
 }
 .container .weather .today .secondary .information-box img {
-  max-width: 40%;
-  height: auto;
+    max-width: 40%;
+    height: auto;
 }
 .container .weather .forecast {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
 }
 .container .weather .forecast .tomorrow,
 .container .weather .forecast .day-after {
-  background-color: RGBA(175, 211, 226, 0.2);
-  border-radius: 30px;
-  padding: 10px;
+    background-color: RGBA(175, 211, 226, 0.2);
+    border-radius: 30px;
+    padding: 10px;
 }
 .container .weather .forecast .tomorrow h3,
 .container .weather .forecast .day-after h3 {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 .container .weather .forecast .tomorrow .information-box,
 .container .weather .forecast .day-after .information-box {
-  display: flex;
-  align-items: left;
-  padding: 5px;
-  gap: 10px;
-  justify-content: left;
+    display: flex;
+    align-items: left;
+    padding: 5px;
+    gap: 10px;
+    justify-content: left;
 }
 .container .weather .forecast .tomorrow .information-box img,
 .container .weather .forecast .day-after .information-box img {
-  max-width: 30%;
-  height: auto;
-}/*# sourceMappingURL=style.css.map */
+    max-width: 30%;
+    height: auto;
+} /*# sourceMappingURL=style.css.map */

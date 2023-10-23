@@ -147,17 +147,19 @@ header {
 
             .main-view {
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
                 .temperature {
-                    //add font-size and zero margin to temperature -> Author Noora
-                    font-size: 3.5em;
+                    font-size: 6em;
                     margin: 0px;
+                    margin-top: 30px;
                 }
-            }
-
-            .info {
-                font-size: 18px;
+                .info-box {
+                    display: flex;
+                    font-size: 18px;
+                    align-items: center;
+                }
             }
 
             .secondary {
