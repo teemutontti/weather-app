@@ -17,6 +17,13 @@ body {
   color: #f6f1f1;
 }
 
+.container .weather .forecast .tomorrow .information-box img,
+.container .weather .forecast .day-after .information-box img, .container .weather .today .secondary .information-box img {
+  background-color: RGBA(246, 241, 241, 0.6);
+  border-radius: 30px;
+  padding: 10px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -105,6 +112,10 @@ header .search #icon:hover {
 }
 .container .weather .slider .checkbox:checked + .toggle::after {
   left: 25px;
+  background-color: #146c94;
+}
+.container .weather .slider .checkbox:checked + .toggle {
+  border: 2px solid #146c94;
 }
 .container .weather .slider .checkbox {
   display: none;
@@ -117,10 +128,10 @@ header .search #icon:hover {
   display: inline;
 }
 .container .weather .slider #celsius {
-  float: left;
+  float: right;
 }
 .container .weather .slider #Fahrenheit {
-  float: right;
+  float: left;
 }
 .container .weather .today {
   border-radius: 15px;
@@ -156,7 +167,7 @@ header .search #icon:hover {
   max-width: 120px;
 }
 .container .weather .today .secondary .information-box img {
-  max-width: 30%;
+  max-width: 40%;
   height: auto;
 }
 .container .weather .forecast {
@@ -185,6 +196,6 @@ header .search #icon:hover {
 }
 .container .weather .forecast .tomorrow .information-box img,
 .container .weather .forecast .day-after .information-box img {
-  max-width: 20%;
+  max-width: 30%;
   height: auto;
 }/*# sourceMappingURL=style.css.map */

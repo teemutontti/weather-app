@@ -103,6 +103,12 @@ header {
             // Add slider movement on click
             .checkbox:checked + .toggle::after {
                 left: 25px;
+                background-color: $main-color-4;
+            }
+
+            //change switch border color when checkbox is checked
+            .checkbox:checked + .toggle {
+                border: 2px solid $main-color-4;
             }
 
             // hide checkbox
@@ -121,12 +127,12 @@ header {
 
             //float celsius text to the left
             #celsius {
-                float: left;
+                float: right;
             }
 
             //float fahrenheit text to the right
             #Fahrenheit {
-                float: right;
+                float: left;
             }
         }
         .today {
@@ -165,10 +171,13 @@ header {
                     flex-direction: column;
                     align-items: center;
                     padding: 5px;
+
                     max-width: 120px;
 
                     img {
-                        max-width: 30%;
+                        //add background to icons to make them more visible
+                        @extend %icon-background-style;
+                        max-width: 40%;
                         height: auto;
                     }
                 }
@@ -198,7 +207,9 @@ header {
                     gap: 10px;
                     justify-content: center;
                     img {
-                        max-width: 20%;
+                        //add background to icons to make them more visible
+                        @extend %icon-background-style;
+                        max-width: 30%;
                         height: auto;
                     }
                 }
