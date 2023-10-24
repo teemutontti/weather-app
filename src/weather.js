@@ -148,11 +148,15 @@ function updateDayAfter(dataObject) {
     if (temperatureUnit == "C") {
         document.querySelector(
             ".day-after .max-min-temp"
-        ).textContent = `${dataObject.maxtemp_c} / ${dataObject.mintemp_c} °C`;
+        ).textContent = `${Math.floor(dataObject.maxtemp_c)} / ${Math.floor(
+            dataObject.mintemp_c
+        )} °C`;
     } else {
         document.querySelector(
             ".day-after .max-min-temp"
-        ).textContent = `${dataObject.maxtemp_f} / ${dataObject.mintemp_f} °F`;
+        ).textContent = `${Math.floor(dataObject.maxtemp_f)} / ${Math.floor(
+            dataObject.mintemp_f
+        )} °F`;
     }
 
     document.querySelector(".day-after .date").textContent = `${formatDate(
