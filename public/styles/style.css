@@ -197,7 +197,7 @@ header .search {
 .container .weather .forecast .tomorrow .information-box,
 .container .weather .forecast .day-after .information-box {
   display: flex;
-  align-items: left;
+  align-items: center;
   padding: 5px;
   gap: 10px;
   justify-content: left;
