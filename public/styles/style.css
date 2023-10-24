@@ -53,6 +53,11 @@ header .search #icon {
   box-sizing: border-box;
 }
 
+.material-symbols-outlined {
+  color: #f6f1f1;
+  font-variation-settings: "FILL" 0, "wght" 250, "GRAD" 0, "opsz" 24;
+}
+
 body {
   margin: 0px;
   background-image: url("../pics/daybg.webp");
