@@ -138,6 +138,9 @@ header .search {
   border-radius: 15px;
   padding: 10px;
 }
+.container .weather .today .material-symbols-outlined {
+  font-size: 30px !important;
+}
 .container .weather .today h2 {
   padding-top: 20px;
   margin-bottom: 0;
