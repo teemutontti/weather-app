@@ -120,11 +120,19 @@ header {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                .temperature {
-                    font-size: 6em;
-                    margin: 0px;
-                    margin-top: 30px;
+
+                .tempUnit {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .temperature {
+                        font-size: 6em;
+                        margin: 0px;
+                        margin-top: 30px;
+                    }
                 }
+
                 .info-box {
                     display: flex;
                     font-size: 18px;

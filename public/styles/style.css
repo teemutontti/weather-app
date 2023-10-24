@@ -140,7 +140,12 @@ header .search {
   justify-content: center;
   align-items: center;
 }
-.container .weather .today .main-view .temperature {
+.container .weather .today .main-view .tempUnit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.container .weather .today .main-view .tempUnit .temperature {
   font-size: 6em;
   margin: 0px;
   margin-top: 30px;
