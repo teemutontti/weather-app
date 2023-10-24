@@ -7,8 +7,7 @@
 // Google Icon styling
 .material-symbols-outlined {
     color: $base-font-color;
-    font-variation-settings:
-        "FILL" 0, "wght" 250, "GRAD" 0, "opsz" 24;
+    font-variation-settings: "FILL" 0, "wght" 250, "GRAD" 0, "opsz" 24;
 }
 
 body {
@@ -33,7 +32,7 @@ header {
 }
 
 .container {
-    margin: 0px 20px;
+    margin: 0px 7%;
     .weather {
         position: relative;
         background-color: $main-color-4;
@@ -140,13 +139,13 @@ header {
                     align-items: center;
 
                     .temperature {
-                        font-size: 6em;
+                        font-size: 9em;
                         margin: 0px;
-                        margin-top: 30px;
                     }
 
                     .units {
                         font-size: 1.5em;
+                        align-self: flex-start;
                     }
                 }
 
@@ -154,6 +153,10 @@ header {
                     display: flex;
                     font-size: 18px;
                     align-items: center;
+                    justify-content: center;
+                    img {
+                        max-width: 30%;
+                    }
                 }
             }
 
