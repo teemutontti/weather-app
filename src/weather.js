@@ -82,25 +82,33 @@ function updateToday(dataObject) {
     if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
         document.querySelector(
             ".today .temperature"
-        ).textContent = `${dataObject.current.temp_c}`;
+        ).textContent = `${Math.floor(dataObject.current.temp_c)}`;
         document.querySelector(".today .units").textContent = `°C`; // new
         document.querySelector(
             ".today .max-min-temp"
-        ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c} / ${dataObject.forecast.forecastday[0].day.mintemp_c} °C`;
+        ).textContent = `${Math.floor(
+            dataObject.forecast.forecastday[0].day.maxtemp_c
+        )} / ${Math.floor(
+            dataObject.forecast.forecastday[0].day.mintemp_c
+        )} °C`;
         document.querySelector(
             ".today .wind"
         ).textContent = `${calcWindSpeedFromKph(dataObject)} m/s`;
     } else {
         document.querySelector(
             ".today .temperature"
-        ).textContent = `${dataObject.current.temp_f}`;
+        ).textContent = `${Math.floor(dataObject.current.temp_f)}`;
         document.querySelector(".today .units").textContent = `°F`; // new
         document.querySelector(
             ".today .max-min-temp"
-        ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_f} / ${dataObject.forecast.forecastday[0].day.mintemp_f} °F`;
+        ).textContent = `${Math.floor(
+            dataObject.forecast.forecastday[0].day.maxtemp_f
+        )} / ${Math.floor(
+            dataObject.forecast.forecastday[0].day.mintemp_f
+        )} °F`;
         document.querySelector(
             ".today .wind"
-        ).textContent = `${calcWindSpeedFromMph(dataObject)} mi/s`;
+        ).textContent = `${dataObject.current.wind_mph} mi/h`;
     }
     document.querySelector(".today .city").textContent =
         dataObject.location.name;
@@ -114,11 +122,15 @@ function updateTomorrow(dataObject) {
     if (temperatureUnit == "C") {
         document.querySelector(
             ".tomorrow .max-min-temp"
-        ).textContent = `${dataObject.maxtemp_c} / ${dataObject.mintemp_c} °C`;
+        ).textContent = `${Math.floor(dataObject.maxtemp_c)} / ${Math.floor(
+            dataObject.mintemp_c
+        )} °C`;
     } else {
         document.querySelector(
             ".tomorrow .max-min-temp"
-        ).textContent = `${dataObject.maxtemp_f} / ${dataObject.mintemp_f} °F`;
+        ).textContent = `${Math.floor(dataObject.maxtemp_f)} / ${Math.floor(
+            dataObject.mintemp_f
+        )} °F`;
     }
     document.querySelector(".tomorrow .date").textContent = `${formatDate(
         tomorrowsDate
@@ -136,11 +148,15 @@ function updateDayAfter(dataObject) {
     if (temperatureUnit == "C") {
         document.querySelector(
             ".day-after .max-min-temp"
-        ).textContent = `${dataObject.maxtemp_c} / ${dataObject.mintemp_c} °C`;
+        ).textContent = `${Math.floor(dataObject.maxtemp_c)} / ${Math.floor(
+            dataObject.mintemp_c
+        )} °C`;
     } else {
         document.querySelector(
             ".day-after .max-min-temp"
-        ).textContent = `${dataObject.maxtemp_f} / ${dataObject.mintemp_f} °F`;
+        ).textContent = `${Math.floor(dataObject.maxtemp_f)} / ${Math.floor(
+            dataObject.mintemp_f
+        )} °F`;
     }
 
     document.querySelector(".day-after .date").textContent = `${formatDate(
@@ -169,16 +185,4 @@ function calcWindSpeedFromKph(dataObject) {
 
     //Return results with .1 decimal accuracity
     return windSpeedMs.toFixed(1);
-}
-
-//Function to calculate windspeed to miles per second
-function calcWindSpeedFromMph(dataObject) {
-    //Get windspeed as mi/h
-    let windSpeedMph = dataObject.current.wind_mph;
-
-    //Transfer into mi/s
-    let windSpeedMis = (windSpeedMph * windSpeedMph) / 3600;
-
-    //Return results with .1 decimal accuracity
-    return windSpeedMis.toFixed(1);
 }
