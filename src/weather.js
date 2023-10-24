@@ -42,7 +42,7 @@ document.getElementById("field").addEventListener("keyup", function (event) {
 //Function for fetching weather <-- Mikko
 async function fetchWeather(city) {
     const apiKey = "e15e748acfc2424f9df135245232809";
-    let url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`;
+    let url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=3`;
 
     let hr = await fetch(url);
     let data = await hr.json();
