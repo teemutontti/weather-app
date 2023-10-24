@@ -108,7 +108,7 @@ function updateToday(dataObject) {
         )} °F`;
         document.querySelector(
             ".today .wind"
-        ).textContent = `${calcWindSpeedFromMph(dataObject)} mi/s`;
+        ).textContent = `${dataObject.current.wind_mph} mi/h`;
     }
     document.querySelector(".today .city").textContent =
         dataObject.location.name;
@@ -185,16 +185,4 @@ function calcWindSpeedFromKph(dataObject) {
 
     //Return results with .1 decimal accuracity
     return windSpeedMs.toFixed(1);
-}
-
-//Function to calculate windspeed to miles per second
-function calcWindSpeedFromMph(dataObject) {
-    //Get windspeed as mi/h
-    let windSpeedMph = dataObject.current.wind_mph;
-
-    //Transfer into mi/s
-    let windSpeedMis = (windSpeedMph * windSpeedMph) / 3600;
-
-    //Return results with .1 decimal accuracity
-    return windSpeedMis.toFixed(1);
 }
