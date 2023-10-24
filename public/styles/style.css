@@ -150,6 +150,9 @@ header .search {
   margin: 0px;
   margin-top: 30px;
 }
+.container .weather .today .main-view .tempUnit .units {
+  font-size: 1.5em;
+}
 .container .weather .today .main-view .info-box {
   display: flex;
   font-size: 18px;
