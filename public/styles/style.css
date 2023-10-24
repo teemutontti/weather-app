@@ -69,6 +69,9 @@ header .search {
   border-radius: 5px;
 }
 
+.container {
+  margin: 0px 20px;
+}
 .container .weather {
   position: relative;
   background-color: #146c94;
