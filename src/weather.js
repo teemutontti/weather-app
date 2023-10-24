@@ -82,7 +82,7 @@ function updateToday(dataObject) {
     if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
         document.querySelector(
             ".today .temperature"
-        ).textContent = `${dataObject.current.temp_c}`;
+        ).textContent = `${Math.floor(dataObject.current.temp_c)}`;
         document.querySelector(".today .units").textContent = `°C`; // new
         document.querySelector(
             ".today .max-min-temp"
@@ -93,7 +93,7 @@ function updateToday(dataObject) {
     } else {
         document.querySelector(
             ".today .temperature"
-        ).textContent = `${dataObject.current.temp_f}`;
+        ).textContent = `${Math.floor(dataObject.current.temp_f)}`;
         document.querySelector(".today .units").textContent = `°F`; // new
         document.querySelector(
             ".today .max-min-temp"
