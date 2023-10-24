@@ -153,6 +153,9 @@ header {
                     display: flex;
                     font-size: 18px;
                     align-items: center;
+                    img {
+                        max-width: 30%;
+                    }
                 }
             }
 
