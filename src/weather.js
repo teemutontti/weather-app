@@ -86,7 +86,11 @@ function updateToday(dataObject) {
         document.querySelector(".today .units").textContent = `°C`; // new
         document.querySelector(
             ".today .max-min-temp"
-        ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_c} / ${dataObject.forecast.forecastday[0].day.mintemp_c} °C`;
+        ).textContent = `${Math.floor(
+            dataObject.forecast.forecastday[0].day.maxtemp_c
+        )} / ${Math.floor(
+            dataObject.forecast.forecastday[0].day.mintemp_c
+        )} °C`;
         document.querySelector(
             ".today .wind"
         ).textContent = `${calcWindSpeedFromKph(dataObject)} m/s`;
@@ -97,7 +101,11 @@ function updateToday(dataObject) {
         document.querySelector(".today .units").textContent = `°F`; // new
         document.querySelector(
             ".today .max-min-temp"
-        ).textContent = `${dataObject.forecast.forecastday[0].day.maxtemp_f} / ${dataObject.forecast.forecastday[0].day.mintemp_f} °F`;
+        ).textContent = `${Math.floor(
+            dataObject.forecast.forecastday[0].day.maxtemp_f
+        )} / ${Math.floor(
+            dataObject.forecast.forecastday[0].day.mintemp_f
+        )} °F`;
         document.querySelector(
             ".today .wind"
         ).textContent = `${calcWindSpeedFromMph(dataObject)} mi/s`;
