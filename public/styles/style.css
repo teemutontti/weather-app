@@ -79,6 +79,9 @@ body header .search {
   justify-content: center;
   border-radius: 5px;
 }
+body main {
+  display: none;
+}
 body main .container {
   margin: 0px 7%;
 }
