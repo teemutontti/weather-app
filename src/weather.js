@@ -115,6 +115,9 @@ function updateToday(dataObject) {
     document.querySelector(".today img").src = "http:" + iconUrl;
     document.querySelector(".today .info").textContent =
         dataObject.current.condition.text;
+    document.querySelector(
+        ".today .humidity"
+    ).textContent = `${dataObject.current.humidity}%`;
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
