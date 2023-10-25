@@ -19,6 +19,12 @@ function getWeather() {
     let city = searchedCity;
     let finnishVowels = { ä: "a", Ä: "A", ö: "o", Ö: "O", å: "a", Å: "A" };
 
+    for (let letter of searchedCity) {
+        if (letter in finnishVowels) {
+            city = city.replace(letter, finnishVowels[letter]);
+        }
+    }
+
     fetchWeather(city);
 }
 
