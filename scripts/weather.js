@@ -17,6 +17,7 @@ const formatDate = (date) => {
 function getWeather() {
     let searchedCity = document.getElementById("field").value;
     let city = searchedCity;
+    let finnishVowels = { ä: "a", Ä: "A", ö: "o", Ö: "O", å: "a", Å: "A" };
 
     fetchWeather(city);
 }
