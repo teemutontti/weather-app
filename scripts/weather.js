@@ -15,7 +15,8 @@ const formatDate = (date) => {
 
 //Function for fetching info from html input <-- Mikko
 function getWeather() {
-    let city = document.getElementById("field").value;
+    let searchedCity = document.getElementById("field").value;
+    let city = searchedCity;
 
     fetchWeather(city);
 }
