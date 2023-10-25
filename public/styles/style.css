@@ -18,8 +18,8 @@ body {
   color: #f6f1f1;
 }
 
-.container .weather .forecast .tomorrow .information-box img,
-.container .weather .forecast .day-after .information-box img, .container .weather .today .secondary .information-box img {
+.container .weather .forecast .tomorrow .forecast-information-box img,
+.container .weather .forecast .day-after .forecast-information-box img, .container .weather .today .secondary .today-information-box img {
   background-color: RGBA(246, 241, 241, 0.6);
   border-radius: 30px;
   padding: 10px;
@@ -75,7 +75,7 @@ header .search {
 }
 
 .container {
-  margin: 0px 20px;
+  margin: 0px 7%;
 }
 .container .weather {
   position: relative;
@@ -157,17 +157,21 @@ header .search {
   align-items: center;
 }
 .container .weather .today .main-view .tempUnit .temperature {
-  font-size: 6em;
+  font-size: 9em;
   margin: 0px;
-  margin-top: 30px;
 }
 .container .weather .today .main-view .tempUnit .units {
   font-size: 1.5em;
+  align-self: flex-start;
 }
 .container .weather .today .main-view .info-box {
   display: flex;
   font-size: 18px;
   align-items: center;
+  justify-content: center;
+}
+.container .weather .today .main-view .info-box img {
+  max-width: 30%;
 }
 .container .weather .today .secondary {
   display: flex;
@@ -175,14 +179,14 @@ header .search {
   margin: 5px;
   padding: 5px;
 }
-.container .weather .today .secondary .information-box {
+.container .weather .today .secondary .today-information-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
   max-width: 120px;
 }
-.container .weather .today .secondary .information-box img {
+.container .weather .today .secondary .today-information-box img {
   max-width: 40%;
   height: auto;
 }
@@ -202,16 +206,16 @@ header .search {
 .container .weather .forecast .day-after h3 {
   margin-bottom: 5px;
 }
-.container .weather .forecast .tomorrow .information-box,
-.container .weather .forecast .day-after .information-box {
+.container .weather .forecast .tomorrow .forecast-information-box,
+.container .weather .forecast .day-after .forecast-information-box {
   display: flex;
   align-items: center;
   padding: 5px;
   gap: 10px;
   justify-content: left;
 }
-.container .weather .forecast .tomorrow .information-box img,
-.container .weather .forecast .day-after .information-box img {
+.container .weather .forecast .tomorrow .forecast-information-box img,
+.container .weather .forecast .day-after .forecast-information-box img {
   max-width: 30%;
   height: auto;
 }
