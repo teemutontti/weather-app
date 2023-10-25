@@ -34,9 +34,6 @@ header .search #field {
   background: none;
   color: #f6f1f1;
 }
-header .search #field::-moz-placeholder {
-  color: rgba(246, 241, 241, 0.7);
-}
 header .search #field::placeholder {
   color: rgba(246, 241, 241, 0.7);
 }
@@ -47,6 +44,10 @@ header .search #icon {
   width: 35px;
   margin-left: 10px;
   color: #f6f1f1;
+}
+header .search input {
+  border: 0;
+  outline: none;
 }
 
 * {
@@ -239,4 +240,4 @@ header .search {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-}/*# sourceMappingURL=style.css.map */
+}
