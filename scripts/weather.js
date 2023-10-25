@@ -16,6 +16,11 @@ const formatDate = (date) => {
 //Function for fetching info from html input <-- Mikko
 function getWeather() {
     let searchedCity = document.getElementById("field").value;
+    let city = checkCityName(searchedCity);
+    fetchWeather(city);
+}
+
+function checkCityName(searchedCity) {
     let city = searchedCity;
     let finnishVowels = { ä: "a", Ä: "A", ö: "o", Ö: "O", å: "a", Å: "A" };
 
@@ -24,8 +29,7 @@ function getWeather() {
             city = city.replace(letter, finnishVowels[letter]);
         }
     }
-
-    fetchWeather(city);
+    return city;
 }
 
 // Change displayed units when this function is called
