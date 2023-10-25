@@ -15,208 +15,214 @@ body {
     background-image: url("../pics/daybg.webp");
     text-align: center;
     @extend %base-text-style;
-}
-
-header {
-    @extend %header-style;
-    .search {
-        @extend %search-bar-style-2;
-        height: 35px;
-        max-width: 235px;
-        margin: 0px auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;
-    }
-}
-
-.container {
-    margin: 0px 7%;
-    .weather {
-        position: relative;
-        background-color: $main-color-4;
-        background: linear-gradient(
-            0deg,
-            rgba(20, 108, 148, 1) 28%,
-            rgba(25, 167, 206, 1) 70%,
-            rgba(175, 211, 226, 1) 100%
-        );
-        max-width: 400px;
-        margin: 30px auto; // Auto centers the element
-        border-radius: 20px;
-
-        //styling for temperature unit toggle switch
-        .slider {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            margin: 5px;
-
-            //background of the toggle switch
-            .toggle {
-                position: relative;
-                display: inline-block;
-                width: 50px;
-                height: 25px;
-                background-color: $main-color-1;
-                border-radius: 30px;
-                border: 2px solid $main-color-3;
-                opacity: 0.8;
-            }
-
-            // slider of the toggle swtich
-            .toggle:after {
-                content: "";
-                position: absolute;
-                width: 22px;
-                height: 22px;
-                border-radius: 50%;
-                background-color: $main-color-3;
-                left: -1px;
-                transition: all 0.5s;
-            }
-
-            // Add slider movement on click
-            .checkbox:checked + .toggle::after {
-                left: 25px;
-                background-color: $main-color-4;
-            }
-
-            //change switch border color when checkbox is checked
-            .checkbox:checked + .toggle {
-                border: 2px solid $main-color-4;
-            }
-
-            // hide checkbox
-            .checkbox {
-                display: none;
-            }
-
-            // position text inside toggle switch
-            p {
-                font-size: 10px;
-                font-weight: 700;
-                color: $main-color-4;
-                margin: 5px 5px;
-                display: inline;
-            }
-
-            //float celsius text to the left
-            #celsius {
-                float: right;
-            }
-
-            //float fahrenheit text to the right
-            #Fahrenheit {
-                float: left;
-            }
-        }
-        .today {
-            border-radius: 15px;
-            //remove box-shadow for gradient background, saved for later as a comment
-            // box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-            padding: 10px;
-
-            .material-symbols-outlined {
-                font-size: 30px !important;
-            }
-
-            h2 {
-                padding-top: 20px;
-                margin-bottom: 0;
-            }
-
-            .main-view {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-
-                .tempUnit {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-
-                    .temperature {
-                        font-size: 9em;
-                        margin: 0px;
-                    }
-
-                    .units {
-                        font-size: 1.5em;
-                        align-self: flex-start;
-                    }
-                }
-
-                .info-box {
-                    display: flex;
-                    font-size: 18px;
-                    align-items: center;
-                    justify-content: center;
-                    img {
-                        max-width: 30%;
-                    }
-                }
-            }
-
-            .secondary {
-                display: flex;
-                justify-content: center;
-                margin: 5px;
-                padding: 5px;
-
-                .today-information-box {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 20px;
-
-                    max-width: 120px;
-
-                    img {
-                        //add background to icons to make them more visible
-                        @extend %icon-background-style;
-                        max-width: 40%;
-                        height: auto;
-                    }
-                }
-            }
-        }
-        .forecast {
+    header {
+        @extend %header-style;
+        .search {
+            @extend %search-bar-style-2;
+            height: 35px;
+            max-width: 235px;
+            margin: 0px auto;
             display: flex;
+            align-items: center;
             justify-content: center;
-            gap: 20px;
-            padding: 0px 20px 20px 20px;
+            border-radius: 5px;
+        }
+    }
 
-            .tomorrow,
-            .day-after {
-                // transparent background coloring for forecasts with opacy of 0.2
-                background-color: RGBA(175, 211, 226, 0.2);
-                border-radius: 30px;
-                padding: 10px;
+    main {
+        .container {
+            margin: 0px 7%;
+            .weather {
+                position: relative;
+                background-color: $main-color-4;
+                background: linear-gradient(
+                    0deg,
+                    rgba(20, 108, 148, 1) 28%,
+                    rgba(25, 167, 206, 1) 70%,
+                    rgba(175, 211, 226, 1) 100%
+                );
+                max-width: 400px;
+                margin: 30px auto; // Auto centers the element
+                border-radius: 20px;
 
-                h3 {
-                    margin-bottom: 5px;
+                //styling for temperature unit toggle switch
+                .slider {
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
+                    margin: 5px;
+
+                    //background of the toggle switch
+                    .toggle {
+                        position: relative;
+                        display: inline-block;
+                        width: 50px;
+                        height: 25px;
+                        background-color: $main-color-1;
+                        border-radius: 30px;
+                        border: 2px solid $main-color-3;
+                        opacity: 0.8;
+                    }
+
+                    // slider of the toggle swtich
+                    .toggle:after {
+                        content: "";
+                        position: absolute;
+                        width: 22px;
+                        height: 22px;
+                        border-radius: 50%;
+                        background-color: $main-color-3;
+                        left: -1px;
+                        transition: all 0.5s;
+                    }
+
+                    // Add slider movement on click
+                    .checkbox:checked + .toggle::after {
+                        left: 25px;
+                        background-color: $main-color-4;
+                    }
+
+                    //change switch border color when checkbox is checked
+                    .checkbox:checked + .toggle {
+                        border: 2px solid $main-color-4;
+                    }
+
+                    // hide checkbox
+                    .checkbox {
+                        display: none;
+                    }
+
+                    // position text inside toggle switch
+                    p {
+                        font-size: 10px;
+                        font-weight: 700;
+                        color: $main-color-4;
+                        margin: 5px 5px;
+                        display: inline;
+                    }
+
+                    //float celsius text to the left
+                    #celsius {
+                        float: right;
+                    }
+
+                    //float fahrenheit text to the right
+                    #Fahrenheit {
+                        float: left;
+                    }
                 }
+                .today {
+                    border-radius: 15px;
+                    //remove box-shadow for gradient background, saved for later as a comment
+                    // box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+                    padding: 10px;
 
-                .forecast-information-box {
+                    .material-symbols-outlined {
+                        font-size: 30px !important;
+                    }
+
+                    h2 {
+                        padding-top: 20px;
+                        margin-bottom: 0;
+                    }
+
+                    .main-view {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        .tempUnit {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+
+                            .temperature {
+                                font-size: 9em;
+                                margin: 0px;
+                            }
+
+                            .units {
+                                font-size: 1.5em;
+                                align-self: flex-start;
+                            }
+                        }
+
+                        .info-box {
+                            display: flex;
+                            font-size: 18px;
+                            align-items: center;
+                            justify-content: center;
+                            img {
+                                max-width: 30%;
+                            }
+                        }
+                    }
+
+                    .secondary {
+                        display: flex;
+                        justify-content: center;
+                        margin: 5px;
+                        padding: 5px;
+
+                        .today-information-box {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            padding: 20px;
+
+                            max-width: 120px;
+
+                            img {
+                                //add background to icons to make them more visible
+                                @extend %icon-background-style;
+                                max-width: 40%;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+                .forecast {
                     display: flex;
-                    align-items: center;
-                    padding: 5px;
-                    gap: 10px;
-                    justify-content: left;
-                    img {
-                        //add background to icons to make them more visible
-                        @extend %icon-background-style;
-                        max-width: 30%;
-                        height: auto;
+                    justify-content: center;
+                    gap: 20px;
+                    padding: 0px 20px 20px 20px;
+
+                    .tomorrow,
+                    .day-after {
+                        // transparent background coloring for forecasts with opacy of 0.2
+                        background-color: RGBA(175, 211, 226, 0.2);
+                        border-radius: 30px;
+                        padding: 10px;
+
+                        h3 {
+                            margin-bottom: 5px;
+                        }
+
+                        .forecast-information-box {
+                            display: flex;
+                            align-items: center;
+                            padding: 5px;
+                            gap: 10px;
+                            justify-content: left;
+                            img {
+                                //add background to icons to make them more visible
+                                @extend %icon-background-style;
+                                max-width: 30%;
+                                height: auto;
+                            }
+                        }
                     }
                 }
             }
         }
     }
+
+    footer {
+        background-color: rgba(128, 128, 128, 0.5);
+    }
 }
+
 
 @media only screen and (min-width: 700px) {
     header {
