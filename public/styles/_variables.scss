@@ -99,4 +99,9 @@ $main-color-4: #146c94;
         margin-left: 10px;
         color: $base-font-color;
     }
+
+    input {
+        border: 0;
+        outline: none;
+    }
 }
