@@ -11,9 +11,13 @@
 }
 
 body {
-    margin: 0px;
     background-image: url("../pics/daybg.webp");
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    margin: 0px;
     @extend %base-text-style;
     header {
         @extend %header-style;
