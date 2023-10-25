@@ -20,6 +20,7 @@ function getWeather() {
     fetchWeather(city);
 }
 
+//Function to make all city names readable for the fetch <-- Jenny
 function checkCityName(searchedCity) {
     let city = searchedCity;
     let finnishVowels = { ä: "a", Ä: "A", ö: "o", Ö: "O", å: "a", Å: "A" };
