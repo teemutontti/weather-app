@@ -64,6 +64,8 @@ async function fetchWeather(city) {
     updateToday(dataObj.today);
     updateTomorrow(dataObj.tomorrow);
     updateDayAfter(dataObj.dayAfter);
+
+    document.querySelector("main").style.display = "block";
 }
 
 //Function for parseing fetched data <-- Noora
