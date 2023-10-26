@@ -109,9 +109,9 @@ function updateToday(dataObject) {
             ".today .max-min-temp"
         ).textContent = `${Math.floor(
             dataObject.forecast.forecastday[0].day.maxtemp_f
-        )} / ${Math.floor(
+        )} ° / ${Math.floor(
             dataObject.forecast.forecastday[0].day.mintemp_f
-        )} °F`;
+        )} °`;
         document.querySelector(
             ".today .wind"
         ).textContent = `${dataObject.current.wind_mph} mi/h`;
