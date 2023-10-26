@@ -204,7 +204,7 @@ body main .container .weather .today .secondary .today-information-box img {
 body main .container .weather .forecast {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 13px;
   padding: 0px 13px 13px 13px;
 }
 body main .container .weather .forecast .tomorrow,
