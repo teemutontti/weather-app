@@ -199,6 +199,11 @@ body {
                         border-radius: 30px;
                         padding: 10px;
 
+                        img {
+                            max-width: 40%;
+                            height: auto;
+                        }
+
                         .forecast-information-box {
                             display: flex;
                             align-items: center;

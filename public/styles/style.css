@@ -206,6 +206,11 @@ body main .container .weather .forecast .day-after {
   border-radius: 30px;
   padding: 10px;
 }
+body main .container .weather .forecast .tomorrow img,
+body main .container .weather .forecast .day-after img {
+  max-width: 40%;
+  height: auto;
+}
 body main .container .weather .forecast .tomorrow .forecast-information-box,
 body main .container .weather .forecast .day-after .forecast-information-box {
   display: flex;
