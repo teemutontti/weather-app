@@ -35,6 +35,8 @@ function checkCityName(searchedCity) {
     return city;
 }
 
+//Function to check if header should use location name from API
+// or use formatted version of the original search word <-- Jenny
 function outputCityName(cityFromAPI) {
     if (
         cityFromAPI.toLowerCase() == checkCityName(originalSearch).toLowerCase()
