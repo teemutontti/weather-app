@@ -1,4 +1,4 @@
-import { parsedData, formatDate } from "./helper";
+import { parsedData, formatDate } from "./helper.js";
 
 // Saving the dates each time the script is initialized
 const todaysDate = new Date();
