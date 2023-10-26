@@ -207,8 +207,6 @@ body {
                             gap: 10px;
                             justify-content: left;
                             img {
-                                //add background to icons to make them more visible
-                                @extend %icon-background-style;
                                 max-width: 30%;
                                 height: auto;
                             }
