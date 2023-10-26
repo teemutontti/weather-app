@@ -1,4 +1,4 @@
-const { parsedData, formatDate } = require("./helper");
+import { parsedData, formatDate } from "./helper";
 
 // Saving the dates each time the script is initialized
 const todaysDate = new Date();
