@@ -203,7 +203,7 @@ body main .container .weather .forecast {
 body main .container .weather .forecast .tomorrow,
 body main .container .weather .forecast .day-after {
   background-color: RGBA(175, 211, 226, 0.2);
-  border-radius: 30px;
+  border-radius: 20px;
   padding: 10px;
 }
 body main .container .weather .forecast .tomorrow h3,
