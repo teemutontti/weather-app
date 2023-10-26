@@ -83,15 +83,9 @@ function parsedData(data) {
 
 //Function for returning current weather to html <-- Jenny
 function updateToday(dataObject) {
-    let day = isDay(dataObject);
+    let isDay = checkDay(dataObject);
+    changeBackground(isDay);
     let iconUrl = dataObject.current.condition.icon.replace("64x64", "128x128");
-
-    //Change website background if its day or night
-    if (day) {
-        document.body.style.backgroundImage = "url(./pics/daybg.webp)";
-    } else {
-        document.body.style.backgroundImage = "url(./pics/nightbg.webp)";
-    }
 
     //Change website information based on retrieved data from API
     if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
@@ -191,6 +185,15 @@ function updateDayAfter(dataObject) {
 // Function that checks if current time is day or night and returns true or false
 function isDay(dataObject) {
     return dataObject.current.is_day == 1 ? true : false;
+}
+
+function changeBackground(isDay) {
+    //Change website background if its day or night
+    if (isDay) {
+        document.body.style.backgroundImage = "url(./pics/daybg.webp)";
+    } else {
+        document.body.style.backgroundImage = "url(./pics/nightbg.webp)";
+    }
 }
 
 //Function to calculate windspeed to meters per second
