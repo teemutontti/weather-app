@@ -8,10 +8,12 @@ tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
 dayAftersDate.setDate(dayAftersDate.getDate() + 2);
 let temperatureUnit = "C";
 let windSpeedUnit = "m/s";
+var originalSearch = "";
 
 //Function for fetching info from html input <-- Mikko
 function getWeather() {
     let searchedCity = document.getElementById("field").value;
+    originalSearch = searchedCity;
     let city = checkCityName(searchedCity);
     fetchWeather(city);
 }
@@ -27,6 +29,19 @@ function checkCityName(searchedCity) {
         }
     }
     return city;
+}
+
+//Function to check if header should use location name from API
+// or use formatted version of the original search word <-- Jenny
+function outputCityName(cityFromAPI) {
+    if (
+        cityFromAPI.toLowerCase() == checkCityName(originalSearch).toLowerCase()
+    ) {
+        let formattedName =
+            originalSearch.charAt(0).toUpperCase() + originalSearch.slice(1);
+        return formattedName;
+    }
+    return cityFromAPI;
 }
 
 // Change displayed units when this function is called
@@ -102,8 +117,9 @@ function updateToday(dataObject) {
             ".today .wind"
         ).textContent = `${dataObject.current.wind_mph} mi/h`;
     }
-    document.querySelector(".today .city").textContent =
-        dataObject.location.name;
+    document.querySelector(".today .city").textContent = outputCityName(
+        dataObject.location.name
+    );
     document.querySelector(".today img").src = "https:" + iconUrl;
     document.querySelector(".today .info").textContent =
         dataObject.current.condition.text;
