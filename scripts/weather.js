@@ -1,3 +1,5 @@
+const { parsedData, formatDate } = require("./helper");
+
 // Saving the dates each time the script is initialized
 const todaysDate = new Date();
 const tomorrowsDate = new Date(todaysDate);
@@ -6,12 +8,6 @@ tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
 dayAftersDate.setDate(dayAftersDate.getDate() + 2);
 let temperatureUnit = "C";
 let windSpeedUnit = "m/s";
-
-//Function for returning date in a formatted matter
-const formatDate = (date) => {
-    const options = { weekday: "short", month: "short", day: "numeric" };
-    return date.toLocaleDateString("en-US", options);
-};
 
 //Function for fetching info from html input <-- Mikko
 function getWeather() {
@@ -66,19 +62,6 @@ async function fetchWeather(city) {
     updateDayAfter(dataObj.dayAfter);
 
     document.querySelector("main").style.display = "block";
-}
-
-//Function for parseing fetched data <-- Noora
-function parsedData(data) {
-    let today = data;
-    let tomorrow = data.forecast.forecastday[1].day;
-    let dayAfter = data.forecast.forecastday[2].day;
-
-    return {
-        today: today,
-        tomorrow: tomorrow,
-        dayAfter: dayAfter,
-    };
 }
 
 //Function for returning current weather to html <-- Jenny
