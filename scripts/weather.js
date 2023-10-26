@@ -83,7 +83,7 @@ function parsedData(data) {
 
 //Function for returning current weather to html <-- Jenny
 function updateToday(dataObject) {
-    let day = checkDay(dataObject);
+    let day = isDay(dataObject);
     let iconUrl = dataObject.current.condition.icon.replace("64x64", "128x128");
 
     //Change website background if its day or night
@@ -189,7 +189,7 @@ function updateDayAfter(dataObject) {
 }
 
 // Function that checks if current time is day or night and returns true or false
-function checkDay(dataObject) {
+function isDay(dataObject) {
     return dataObject.current.is_day == 1 ? true : false;
 }
 
