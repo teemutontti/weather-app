@@ -1,4 +1,4 @@
-const { parsedData } = require("./helper");
+const { parsedData, formatDate } = require("./helper");
 
 // Saving the dates each time the script is initialized
 const todaysDate = new Date();
@@ -8,12 +8,6 @@ tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
 dayAftersDate.setDate(dayAftersDate.getDate() + 2);
 let temperatureUnit = "C";
 let windSpeedUnit = "m/s";
-
-//Function for returning date in a formatted matter
-const formatDate = (date) => {
-    const options = { weekday: "short", month: "short", day: "numeric" };
-    return date.toLocaleDateString("en-US", options);
-};
 
 //Function for fetching info from html input <-- Mikko
 function getWeather() {
