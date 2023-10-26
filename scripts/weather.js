@@ -35,6 +35,17 @@ function checkCityName(searchedCity) {
     return city;
 }
 
+function outputCityName(cityFromAPI) {
+    if (
+        cityFromAPI.toLowerCase() == checkCityName(originalSearch).toLowerCase()
+    ) {
+        let formattedName =
+            originalSearch.charAt(0).toUpperCase() + originalSearch.slice(1);
+        return formattedName;
+    }
+    return cityFromAPI;
+}
+
 // Change displayed units when this function is called
 function toggleUnits() {
     if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
