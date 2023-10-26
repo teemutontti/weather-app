@@ -206,6 +206,10 @@ body main .container .weather .forecast .day-after {
   border-radius: 30px;
   padding: 10px;
 }
+body main .container .weather .forecast .tomorrow h3,
+body main .container .weather .forecast .day-after h3 {
+  margin: 0px;
+}
 body main .container .weather .forecast .tomorrow img,
 body main .container .weather .forecast .day-after img {
   max-width: 40%;
@@ -223,6 +227,12 @@ body main .container .weather .forecast .tomorrow .forecast-information-box img,
 body main .container .weather .forecast .day-after .forecast-information-box img {
   max-width: 30%;
   height: auto;
+}
+body main .container .weather .forecast .tomorrow .forecast-information-box .max-min-temp,
+body main .container .weather .forecast .tomorrow .forecast-information-box .chance-of-rain,
+body main .container .weather .forecast .day-after .forecast-information-box .max-min-temp,
+body main .container .weather .forecast .day-after .forecast-information-box .chance-of-rain {
+  margin: 0px;
 }
 body footer {
   background-color: rgba(128, 128, 128, 0.5);
