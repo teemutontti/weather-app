@@ -124,7 +124,7 @@ function updateToday(dataObject) {
         dataObject.current.condition.text;
     document.querySelector(
         ".today .humidity"
-    ).textContent = `${dataObject.current.humidity}%`;
+    ).textContent = `${dataObject.current.humidity} %`;
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
@@ -150,7 +150,7 @@ function updateTomorrow(dataObject) {
     ).src = `https:${dataObject.condition.icon}`;
     document.querySelector(
         ".tomorrow .chance-of-rain"
-    ).textContent = `${dataObject.daily_chance_of_rain}%`;
+    ).textContent = `${dataObject.daily_chance_of_rain} %`;
 }
 
 //Function for returning day after tomorrows weather to html <-- Noora
@@ -177,7 +177,7 @@ function updateDayAfter(dataObject) {
     ).src = `https:${dataObject.condition.icon}`;
     document.querySelector(
         ".day-after .chance-of-rain"
-    ).textContent = `${dataObject.daily_chance_of_rain}%`;
+    ).textContent = `${dataObject.daily_chance_of_rain} %`;
 }
 
 // Function that checks if current time is day or night and returns true or false
