@@ -20,12 +20,6 @@ body {
   color: #f6f1f1;
 }
 
-body main .container .weather .today .secondary .today-information-box img {
-  background-color: RGBA(246, 241, 241, 0.6);
-  border-radius: 30px;
-  padding: 10px;
-}
-
 body header .search #field {
   width: 200px;
   height: 100%;

@@ -180,7 +180,6 @@ body {
 
                             img {
                                 //add background to icons to make them more visible
-                                @extend %icon-background-style;
                                 max-width: 40%;
                                 height: auto;
                             }
