@@ -132,15 +132,15 @@ function updateTomorrow(dataObject) {
     if (temperatureUnit == "C") {
         document.querySelector(
             ".tomorrow .max-min-temp"
-        ).textContent = `${Math.floor(dataObject.maxtemp_c)} / ${Math.floor(
+        ).textContent = `${Math.floor(dataObject.maxtemp_c)} ° / ${Math.floor(
             dataObject.mintemp_c
-        )} °C`;
+        )} °`;
     } else {
         document.querySelector(
             ".tomorrow .max-min-temp"
-        ).textContent = `${Math.floor(dataObject.maxtemp_f)} / ${Math.floor(
+        ).textContent = `${Math.floor(dataObject.maxtemp_f)} ° / ${Math.floor(
             dataObject.mintemp_f
-        )} °F`;
+        )} °`;
     }
     document.querySelector(".tomorrow .date").textContent = `${formatDate(
         tomorrowsDate
