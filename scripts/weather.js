@@ -81,8 +81,7 @@ async function fetchWeather(city) {
 
 //Function for returning current weather to html <-- Jenny
 function updateToday(dataObject) {
-    let isDay = checkDay(dataObject);
-    changeBackground(isDay);
+    changeBackground(isDay(dataObject));
     let iconUrl = dataObject.current.condition.icon.replace("64x64", "128x128");
 
     //Change website information based on retrieved data from API
