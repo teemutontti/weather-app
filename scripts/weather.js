@@ -1,3 +1,5 @@
+const { parsedData } = require("./helper");
+
 // Saving the dates each time the script is initialized
 const todaysDate = new Date();
 const tomorrowsDate = new Date(todaysDate);
@@ -66,19 +68,6 @@ async function fetchWeather(city) {
     updateDayAfter(dataObj.dayAfter);
 
     document.querySelector("main").style.display = "block";
-}
-
-//Function for parseing fetched data <-- Noora
-function parsedData(data) {
-    let today = data;
-    let tomorrow = data.forecast.forecastday[1].day;
-    let dayAfter = data.forecast.forecastday[2].day;
-
-    return {
-        today: today,
-        tomorrow: tomorrow,
-        dayAfter: dayAfter,
-    };
 }
 
 //Function for returning current weather to html <-- Jenny
