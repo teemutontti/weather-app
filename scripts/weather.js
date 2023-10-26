@@ -140,8 +140,9 @@ function updateToday(dataObject) {
             ".today .wind"
         ).textContent = `${dataObject.current.wind_mph} mi/h`;
     }
-    document.querySelector(".today .city").textContent =
-        dataObject.location.name;
+    document.querySelector(".today .city").textContent = outputCityName(
+        dataObject.location.name
+    );
     document.querySelector(".today img").src = "https:" + iconUrl;
     document.querySelector(".today .info").textContent =
         dataObject.current.condition.text;
