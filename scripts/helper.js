@@ -17,7 +17,4 @@ const formatDate = (date) => {
     return date.toLocaleDateString("en-US", options);
 };
 
-module.exports = {
-    parsedData,
-    formatDate,
-};
+export { parsedData, formatDate };
