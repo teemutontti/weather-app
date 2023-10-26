@@ -6,6 +6,7 @@ tomorrowsDate.setDate(tomorrowsDate.getDate() + 1);
 dayAftersDate.setDate(dayAftersDate.getDate() + 2);
 let temperatureUnit = "C";
 let windSpeedUnit = "m/s";
+var originalSearch = "";
 
 //Function for returning date in a formatted matter
 const formatDate = (date) => {
@@ -16,6 +17,7 @@ const formatDate = (date) => {
 //Function for fetching info from html input <-- Mikko
 function getWeather() {
     let searchedCity = document.getElementById("field").value;
+    originalSearch = searchedCity;
     let city = checkCityName(searchedCity);
     fetchWeather(city);
 }
