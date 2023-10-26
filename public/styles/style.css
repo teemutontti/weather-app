@@ -259,4 +259,12 @@ body footer {
     grid-column: 2/3;
     grid-row: 1/2;
   }
+  .container .weather .forecast {
+    padding: 0px 0px 20px 0px;
+    margin: 0px 20px;
+    gap: 20px;
+  }
+  .forecast .forecast-information-box {
+    margin-left: 20%;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -258,4 +258,14 @@ body {
             grid-row: 1/2;
         }
     }
+    //Adds bigger margins to .forecast on bigger screen sizes.
+    .container .weather .forecast {
+        padding: 0px 0px 20px 0px;
+        margin: 0px 20px;
+        gap: 20px;
+    }
+    //Centers the info to more center ión bigger screens.
+    .forecast .forecast-information-box {
+        margin-left: 20%;
+    }
 }
