@@ -20,13 +20,6 @@ body {
   color: #f6f1f1;
 }
 
-body main .container .weather .forecast .tomorrow .forecast-information-box img,
-body main .container .weather .forecast .day-after .forecast-information-box img, body main .container .weather .today .secondary .today-information-box img {
-  background-color: RGBA(246, 241, 241, 0.6);
-  border-radius: 30px;
-  padding: 10px;
-}
-
 body header .search #field {
   width: 200px;
   height: 100%;
@@ -204,24 +197,31 @@ body main .container .weather .today .secondary .today-information-box img {
 body main .container .weather .forecast {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  padding: 0px 20px 20px 20px;
+  gap: 13px;
+  padding: 0px 0px 13px 0px;
+  margin: 0px 13px;
 }
 body main .container .weather .forecast .tomorrow,
 body main .container .weather .forecast .day-after {
   background-color: RGBA(175, 211, 226, 0.2);
-  border-radius: 30px;
-  padding: 10px;
+  flex: 1;
+  border-radius: 20px;
+  padding: 5px;
 }
 body main .container .weather .forecast .tomorrow h3,
 body main .container .weather .forecast .day-after h3 {
-  margin-bottom: 5px;
+  margin: 0px;
+}
+body main .container .weather .forecast .tomorrow img,
+body main .container .weather .forecast .day-after img {
+  max-width: 40%;
+  height: auto;
 }
 body main .container .weather .forecast .tomorrow .forecast-information-box,
 body main .container .weather .forecast .day-after .forecast-information-box {
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 3px;
   gap: 10px;
   justify-content: left;
 }
@@ -229,6 +229,12 @@ body main .container .weather .forecast .tomorrow .forecast-information-box img,
 body main .container .weather .forecast .day-after .forecast-information-box img {
   max-width: 30%;
   height: auto;
+}
+body main .container .weather .forecast .tomorrow .forecast-information-box .max-min-temp,
+body main .container .weather .forecast .tomorrow .forecast-information-box .chance-of-rain,
+body main .container .weather .forecast .day-after .forecast-information-box .max-min-temp,
+body main .container .weather .forecast .day-after .forecast-information-box .chance-of-rain {
+  margin: 0px;
 }
 body footer {
   background-color: rgba(128, 128, 128, 0.5);
@@ -252,5 +258,13 @@ body footer {
   header .search {
     grid-column: 2/3;
     grid-row: 1/2;
+  }
+  .container .weather .forecast {
+    padding: 0px 0px 20px 0px;
+    margin: 0px 20px;
+    gap: 20px;
+  }
+  .forecast .forecast-information-box {
+    margin-left: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
