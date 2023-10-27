@@ -29,4 +29,9 @@ function calcWindSpeedFromKph(dataObject) {
     return windSpeedMs.toFixed(1);
 }
 
-export { parsedData, formatDate, calcWindSpeedFromKph };
+// Function that checks if current time is day or night and returns true or false
+function isDay(dataObject) {
+    return dataObject.current.is_day == 1 ? true : false;
+}
+
+export { parsedData, formatDate, calcWindSpeedFromKph, isDay };

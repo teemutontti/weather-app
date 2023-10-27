@@ -1,4 +1,4 @@
-import { parsedData, formatDate, calcWindSpeedFromKph } from "./helper.js";
+import { parsedData, formatDate, calcWindSpeedFromKph, isDay } from "./helper.js";
 
 // Saving the dates each time the script is initialized
 const todaysDate = new Date();
@@ -142,10 +142,6 @@ function updateDayAfter(dataObject) {
     document.querySelector(".day-after .chance-of-rain").textContent = `${dataObject.daily_chance_of_rain} %`;
 }
 
-// Function that checks if current time is day or night and returns true or false
-function isDay(dataObject) {
-    return dataObject.current.is_day == 1 ? true : false;
-}
 
 function changeBackground(isDay) {
     //Change website background if its day or night
