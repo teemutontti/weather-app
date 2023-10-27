@@ -8,6 +8,7 @@
 
 -   [Description](#Description)
 -   [Features](#Features)
+-   [Usage](#Usage)
 -   [Copyright](#Copyright)
 -   [Authors](#Authors)
     <!-- /Table of Contents -->
