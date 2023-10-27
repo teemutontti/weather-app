@@ -77,6 +77,7 @@ async function fetchWeather(city) {
     updateDayAfter(dataObj.dayAfter);
 
     document.querySelector("main").style.display = "block";
+    setAfterSearchStyle();
 }
 
 //Function for returning current weather to html <-- Jenny
