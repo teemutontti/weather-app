@@ -239,6 +239,13 @@ body {
 }
 
 .search-done {
+    @media only screen and (min-width: 350px) {
+        //Centers the info to more center ión bigger screens.
+        .forecast .forecast-information-box {
+            margin-left: 17%;
+        }
+    }
+
     @media only screen and (min-width: 700px) {
         header {
             display: grid;

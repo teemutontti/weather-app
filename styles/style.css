@@ -244,6 +244,11 @@ body footer {
   background-color: rgba(128, 128, 128, 0.5);
 }
 
+@media only screen and (min-width: 350px) {
+  .search-done .forecast .forecast-information-box {
+    margin-left: 17%;
+  }
+}
 @media only screen and (min-width: 700px) {
   .search-done header {
     display: grid;
