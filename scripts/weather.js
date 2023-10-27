@@ -1,4 +1,4 @@
-import { parsedData, formatDate } from "./helper.js";
+import { parsedData, formatDate, calcWindSpeedFromKph } from "./helper.js";
 
 // Saving the dates each time the script is initialized
 const todaysDate = new Date();
@@ -154,18 +154,6 @@ function changeBackground(isDay) {
     } else {
         document.body.style.backgroundImage = "url(./pics/nightbg.webp)";
     }
-}
-
-//Function to calculate windspeed to meters per second
-function calcWindSpeedFromKph(dataObject) {
-    //Get windspeed as km/h
-    let windSpeedKph = dataObject.current.wind_kph;
-
-    //Transfer into m/s
-    let windSpeedMs = (windSpeedKph * 1000) / 3600;
-
-    //Return results with .1 decimal accuracity
-    return windSpeedMs.toFixed(1);
 }
 
 function setAfterSearchStyle() {
