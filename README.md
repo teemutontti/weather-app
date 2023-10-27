@@ -1,6 +1,6 @@
 # Weather App🌤️
 
-![Man with umbrella in a rainy weather](./pics/sunny.gif)
+<img align='right' alt='sun gif' src='./pics/sunny.gif'></img>
 
 <!-- Table of Contents -->
 
