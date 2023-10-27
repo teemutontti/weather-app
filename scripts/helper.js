@@ -43,4 +43,10 @@ function changeBackground(isDay) {
     }
 }
 
-export { parsedData, formatDate, calcWindSpeedFromKph, isDay, changeBackground };
+export {
+    parsedData,
+    formatDate,
+    calcWindSpeedFromKph,
+    isDay,
+    changeBackground,
+};
