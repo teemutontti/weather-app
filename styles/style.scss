@@ -20,6 +20,8 @@ body {
     margin: 0px;
     @extend %base-text-style;
     header {
+        background-color: $main-color-3;
+        padding-bottom: 35px;
         @extend %header-style;
         .search {
             @extend %search-bar-style-2;
