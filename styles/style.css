@@ -246,7 +246,12 @@ body footer {
 
 @media only screen and (min-width: 350px) {
   .search-done .forecast .forecast-information-box {
-    margin-left: 17%;
+    margin-left: 15%;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .search-done .forecast .forecast-information-box {
+    margin-left: 22%;
   }
 }
 @media only screen and (min-width: 700px) {
@@ -272,8 +277,5 @@ body footer {
     padding: 0px 0px 20px 0px;
     margin: 0px 20px;
     gap: 20px;
-  }
-  .search-done .forecast .forecast-information-box {
-    margin-left: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
