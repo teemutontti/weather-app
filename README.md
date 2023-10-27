@@ -31,6 +31,8 @@ The data used in this project is from https://www.weatherapi.com/.
 
 ## Usage
 
+To use our weather app, simply navigate to the website hosted on GitHub Pages. You can access it by clicking on the following link:
+
 ## Copyright
 
 Copyright (c) 2023 Jenny Myllymaa, Teemu Tontti, Mikko Pasanen, Noora Vainionpää
