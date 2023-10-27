@@ -241,30 +241,30 @@ body footer {
 }
 
 @media only screen and (min-width: 700px) {
-  header {
+  .search-done header {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     align-items: center;
     margin-top: 30px;
   }
-  header h1 {
+  .search-done header h1 {
     grid-column: 1/2;
     grid-row: 1/2;
     font-size: 30px;
     position: absolute;
     left: 30px;
   }
-  header .search {
+  .search-done header .search {
     grid-column: 2/3;
     grid-row: 1/2;
   }
-  .container .weather .forecast {
+  .search-done .container .weather .forecast {
     padding: 0px 0px 20px 0px;
     margin: 0px 20px;
     gap: 20px;
   }
-  .forecast .forecast-information-box {
+  .search-done .forecast .forecast-information-box {
     margin-left: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
