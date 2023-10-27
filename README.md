@@ -1,6 +1,6 @@
 # Weather App🌤️
 
-![Man with umbrella in a rainy weather](/public/pics/weatherpicture.PNG)
+![Man with umbrella in a rainy weather](./pics/weatherpicture_edit.jpg)
 
 <!-- Table of Contents -->
 
@@ -28,6 +28,16 @@ The data used in this project is from https://www.weatherapi.com/.
 -   User-friendly interface
 -   Worldwide weather info
 -   Dynamic day-night background
+
+## Usage
+
+To use our weather app, simply navigate to the website hosted on GitHub Pages. You can access it by clicking on the following link:
+[Weather App](https://teemutontti.github.io/weather-app/public/).
+
+Upon accessing the app, you'll be greeted with an intuitive and user-friendly interface.
+To check the weather of a location, simply enter the city or location name into the search bar and click the magnifying glass or press enter. The app will display the weather information for that location including the current temperature and wind speed, humidity, maximum and minimum temperatures for the current day and the next two days.
+
+As an added feature, the app includes a dynamic day-night background that changes based on the time of day in the selected location. This adds a visual touch to your weather experience.
 
 ## Copyright
 
