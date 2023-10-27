@@ -205,3 +205,7 @@ function calcWindSpeedFromKph(dataObject) {
     //Return results with .1 decimal accuracity
     return windSpeedMs.toFixed(1);
 }
+
+function setAfterSearchStyle() {
+
+}
