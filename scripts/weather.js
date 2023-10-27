@@ -208,4 +208,5 @@ function calcWindSpeedFromKph(dataObject) {
 
 function setAfterSearchStyle() {
     document.querySelector("main").style.display = "block";
+    document.querySelector("body").classList.add("search-done");
 }
