@@ -17,4 +17,36 @@ const formatDate = (date) => {
     return date.toLocaleDateString("en-US", options);
 };
 
-export { parsedData, formatDate };
+//Function to calculate windspeed to meters per second
+function calcWindSpeedFromKph(dataObject) {
+    //Get windspeed as km/h
+    let windSpeedKph = dataObject.current.wind_kph;
+
+    //Transfer into m/s
+    let windSpeedMs = (windSpeedKph * 1000) / 3600;
+
+    //Return results with .1 decimal accuracity
+    return windSpeedMs.toFixed(1);
+}
+
+// Function that checks if current time is day or night and returns true or false
+function isDay(dataObject) {
+    return dataObject.current.is_day == 1 ? true : false;
+}
+
+function changeBackground(isDay) {
+    //Change website background if its day or night
+    if (isDay) {
+        document.body.style.backgroundImage = "url(./pics/daybg.webp)";
+    } else {
+        document.body.style.backgroundImage = "url(./pics/nightbg.webp)";
+    }
+}
+
+export {
+    parsedData,
+    formatDate,
+    calcWindSpeedFromKph,
+    isDay,
+    changeBackground,
+};
