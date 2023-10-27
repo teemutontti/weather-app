@@ -63,6 +63,9 @@ document.getElementById("field").addEventListener("keyup", function (event) {
 // Add onclick event for toggle switch to switch units
 document.querySelector("label.toggle").addEventListener("click", toggleUnits);
 
+//// Add onclick event for searchbar
+document.getElementById("icon").addEventListener("click", getWeather);
+
 //Function for fetching weather <-- Mikko
 async function fetchWeather(city) {
     const apiKey = "e15e748acfc2424f9df135245232809";
