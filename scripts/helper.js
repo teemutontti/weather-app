@@ -34,4 +34,13 @@ function isDay(dataObject) {
     return dataObject.current.is_day == 1 ? true : false;
 }
 
-export { parsedData, formatDate, calcWindSpeedFromKph, isDay };
+function changeBackground(isDay) {
+    //Change website background if its day or night
+    if (isDay) {
+        document.body.style.backgroundImage = "url(./pics/daybg.webp)";
+    } else {
+        document.body.style.backgroundImage = "url(./pics/nightbg.webp)";
+    }
+}
+
+export { parsedData, formatDate, calcWindSpeedFromKph, isDay, changeBackground };

@@ -1,4 +1,4 @@
-import { parsedData, formatDate, calcWindSpeedFromKph, isDay } from "./helper.js";
+import { parsedData, formatDate, calcWindSpeedFromKph, isDay, changeBackground } from "./helper.js";
 
 // Saving the dates each time the script is initialized
 const todaysDate = new Date();
@@ -140,16 +140,6 @@ function updateDayAfter(dataObject) {
     document.querySelector(".day-after .date").textContent = `${formatDate(dayAftersDate)}`;
     document.querySelector(".day-after img").src = `https:${dataObject.condition.icon}`;
     document.querySelector(".day-after .chance-of-rain").textContent = `${dataObject.daily_chance_of_rain} %`;
-}
-
-
-function changeBackground(isDay) {
-    //Change website background if its day or night
-    if (isDay) {
-        document.body.style.backgroundImage = "url(./pics/daybg.webp)";
-    } else {
-        document.body.style.backgroundImage = "url(./pics/nightbg.webp)";
-    }
 }
 
 function setAfterSearchStyle() {
