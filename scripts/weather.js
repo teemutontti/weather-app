@@ -34,11 +34,8 @@ function checkCityName(searchedCity) {
 //Function to check if header should use location name from API
 // or use formatted version of the original search word <-- Jenny
 function outputCityName(cityFromAPI) {
-    if (
-        cityFromAPI.toLowerCase() == checkCityName(originalSearch).toLowerCase()
-    ) {
-        let formattedName =
-            originalSearch.charAt(0).toUpperCase() + originalSearch.slice(1);
+    if (cityFromAPI.toLowerCase() == checkCityName(originalSearch).toLowerCase()) {
+        let formattedName = originalSearch.charAt(0).toUpperCase() + originalSearch.slice(1);
         return formattedName;
     }
     return cityFromAPI;
@@ -63,6 +60,9 @@ document.getElementById("field").addEventListener("keyup", function (event) {
     }
 });
 
+// Add onclick event for toggle switch to switch units
+document.querySelector("label.toggle").addEventListener("click", toggleUnits);
+
 //Function for fetching weather <-- Mikko
 async function fetchWeather(city) {
     const apiKey = "e15e748acfc2424f9df135245232809";
@@ -86,98 +86,57 @@ function updateToday(dataObject) {
 
     //Change website information based on retrieved data from API
     if (temperatureUnit == "C" && windSpeedUnit == "m/s") {
-        document.querySelector(
-            ".today .temperature"
-        ).textContent = `${Math.floor(dataObject.current.temp_c)}`;
+        document.querySelector(".today .temperature").textContent = `${Math.floor(dataObject.current.temp_c)}`;
         document.querySelector(".today .units").textContent = `°C`; // new
-        document.querySelector(
-            ".today .max-min-temp"
-        ).textContent = `${Math.floor(
+        document.querySelector(".today .max-min-temp").textContent = `${Math.floor(
             dataObject.forecast.forecastday[0].day.maxtemp_c
-        )} ° / ${Math.floor(
-            dataObject.forecast.forecastday[0].day.mintemp_c
-        )} °`;
-        document.querySelector(
-            ".today .wind"
-        ).textContent = `${calcWindSpeedFromKph(dataObject)} m/s`;
+        )} ° / ${Math.floor(dataObject.forecast.forecastday[0].day.mintemp_c)} °`;
+        document.querySelector(".today .wind").textContent = `${calcWindSpeedFromKph(dataObject)} m/s`;
     } else {
-        document.querySelector(
-            ".today .temperature"
-        ).textContent = `${Math.floor(dataObject.current.temp_f)}`;
+        document.querySelector(".today .temperature").textContent = `${Math.floor(dataObject.current.temp_f)}`;
         document.querySelector(".today .units").textContent = `°F`; // new
-        document.querySelector(
-            ".today .max-min-temp"
-        ).textContent = `${Math.floor(
+        document.querySelector(".today .max-min-temp").textContent = `${Math.floor(
             dataObject.forecast.forecastday[0].day.maxtemp_f
-        )} ° / ${Math.floor(
-            dataObject.forecast.forecastday[0].day.mintemp_f
-        )} °`;
-        document.querySelector(
-            ".today .wind"
-        ).textContent = `${dataObject.current.wind_mph} mi/h`;
+        )} ° / ${Math.floor(dataObject.forecast.forecastday[0].day.mintemp_f)} °`;
+        document.querySelector(".today .wind").textContent = `${dataObject.current.wind_mph} mi/h`;
     }
-    document.querySelector(".today .city").textContent = outputCityName(
-        dataObject.location.name
-    );
+    document.querySelector(".today .city").textContent = outputCityName(dataObject.location.name);
     document.querySelector(".today img").src = "https:" + iconUrl;
-    document.querySelector(".today .info").textContent =
-        dataObject.current.condition.text;
-    document.querySelector(
-        ".today .humidity"
-    ).textContent = `${dataObject.current.humidity} %`;
+    document.querySelector(".today .info").textContent = dataObject.current.condition.text;
+    document.querySelector(".today .humidity").textContent = `${dataObject.current.humidity} %`;
 }
 
 //Function for returning tomorrows weather to html <-- Teemu
 function updateTomorrow(dataObject) {
     if (temperatureUnit == "C") {
-        document.querySelector(
-            ".tomorrow .max-min-temp"
-        ).textContent = `${Math.floor(dataObject.maxtemp_c)} ° / ${Math.floor(
+        document.querySelector(".tomorrow .max-min-temp").textContent = `${Math.floor(dataObject.maxtemp_c)} ° / ${Math.floor(
             dataObject.mintemp_c
         )} °`;
     } else {
-        document.querySelector(
-            ".tomorrow .max-min-temp"
-        ).textContent = `${Math.floor(dataObject.maxtemp_f)} ° / ${Math.floor(
+        document.querySelector(".tomorrow .max-min-temp").textContent = `${Math.floor(dataObject.maxtemp_f)} ° / ${Math.floor(
             dataObject.mintemp_f
         )} °`;
     }
-    document.querySelector(".tomorrow .date").textContent = `${formatDate(
-        tomorrowsDate
-    )}`;
-    document.querySelector(
-        ".tomorrow img"
-    ).src = `https:${dataObject.condition.icon}`;
-    document.querySelector(
-        ".tomorrow .chance-of-rain"
-    ).textContent = `${dataObject.daily_chance_of_rain} %`;
+    document.querySelector(".tomorrow .date").textContent = `${formatDate(tomorrowsDate)}`;
+    document.querySelector(".tomorrow img").src = `https:${dataObject.condition.icon}`;
+    document.querySelector(".tomorrow .chance-of-rain").textContent = `${dataObject.daily_chance_of_rain} %`;
 }
 
 //Function for returning day after tomorrows weather to html <-- Noora
 function updateDayAfter(dataObject) {
     if (temperatureUnit == "C") {
-        document.querySelector(
-            ".day-after .max-min-temp"
-        ).textContent = `${Math.floor(dataObject.maxtemp_c)} ° / ${Math.floor(
+        document.querySelector(".day-after .max-min-temp").textContent = `${Math.floor(dataObject.maxtemp_c)} ° / ${Math.floor(
             dataObject.mintemp_c
         )} °`;
     } else {
-        document.querySelector(
-            ".day-after .max-min-temp"
-        ).textContent = `${Math.floor(dataObject.maxtemp_f)} ° / ${Math.floor(
+        document.querySelector(".day-after .max-min-temp").textContent = `${Math.floor(dataObject.maxtemp_f)} ° / ${Math.floor(
             dataObject.mintemp_f
         )} °`;
     }
 
-    document.querySelector(".day-after .date").textContent = `${formatDate(
-        dayAftersDate
-    )}`;
-    document.querySelector(
-        ".day-after img"
-    ).src = `https:${dataObject.condition.icon}`;
-    document.querySelector(
-        ".day-after .chance-of-rain"
-    ).textContent = `${dataObject.daily_chance_of_rain} %`;
+    document.querySelector(".day-after .date").textContent = `${formatDate(dayAftersDate)}`;
+    document.querySelector(".day-after img").src = `https:${dataObject.condition.icon}`;
+    document.querySelector(".day-after .chance-of-rain").textContent = `${dataObject.daily_chance_of_rain} %`;
 }
 
 // Function that checks if current time is day or night and returns true or false
