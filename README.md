@@ -32,6 +32,7 @@ The data used in this project is from https://www.weatherapi.com/.
 ## Usage
 
 To use our weather app, simply navigate to the website hosted on GitHub Pages. You can access it by clicking on the following link:
+[Weather App](https://teemutontti.github.io/weather-app/public/).
 
 ## Copyright
 
