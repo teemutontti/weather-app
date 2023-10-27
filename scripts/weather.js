@@ -76,7 +76,6 @@ async function fetchWeather(city) {
     updateTomorrow(dataObj.tomorrow);
     updateDayAfter(dataObj.dayAfter);
 
-    document.querySelector("main").style.display = "block";
     setAfterSearchStyle();
 }
 
@@ -208,5 +207,5 @@ function calcWindSpeedFromKph(dataObject) {
 }
 
 function setAfterSearchStyle() {
-
+    document.querySelector("main").style.display = "block";
 }
