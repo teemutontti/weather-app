@@ -29,6 +29,8 @@ The data used in this project is from https://www.weatherapi.com/.
 -   Worldwide weather info
 -   Dynamic day-night background
 
+## Usage
+
 ## Copyright
 
 Copyright (c) 2023 Jenny Myllymaa, Teemu Tontti, Mikko Pasanen, Noora Vainionpää
