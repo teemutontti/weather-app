@@ -181,7 +181,6 @@ body {
                             max-width: 120px;
 
                             img {
-                                //add background to icons to make them more visible
                                 max-width: 40%;
                                 height: auto;
                             }
@@ -240,6 +239,20 @@ body {
 }
 
 .search-done {
+    @media only screen and (min-width: 350px) {
+        //Centers the info to more center ión bigger screens.
+        .forecast .forecast-information-box {
+            margin-left: 15%;
+        }
+    }
+
+    @media only screen and (min-width: 500px) {
+        //Centers the info to more center ión bigger screens.
+        .forecast .forecast-information-box {
+            margin-left: 22%;
+        }
+    }
+
     @media only screen and (min-width: 700px) {
         header {
             display: grid;
@@ -266,10 +279,6 @@ body {
             padding: 0px 0px 20px 0px;
             margin: 0px 20px;
             gap: 20px;
-        }
-        //Centers the info to more center ión bigger screens.
-        .forecast .forecast-information-box {
-            margin-left: 20%;
         }
     }
 }
