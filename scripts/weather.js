@@ -51,7 +51,9 @@ function toggleUnits() {
         temperatureUnit = "C";
         windSpeedUnit = "m/s";
     }
-    getWeather();
+    if (dataObj) {
+        updateData(dataObj);
+    }
 }
 
 //Function to call getWeather if enter is pressed in html search form.
