@@ -9,6 +9,7 @@ dayAftersDate.setDate(dayAftersDate.getDate() + 2);
 let temperatureUnit = "C";
 let windSpeedUnit = "m/s";
 var originalSearch = "";
+let dataObj;
 
 //Function for fetching info from html input <-- Mikko
 function getWeather() {
@@ -73,7 +74,7 @@ async function fetchWeather(city) {
 
     let hr = await fetch(url);
     let data = await hr.json();
-    let dataObj = parsedData(data);
+    dataObj = parsedData(data);
 
     updateData(dataObj);
 
