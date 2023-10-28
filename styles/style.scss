@@ -12,6 +12,9 @@
 
 body {
     background-image: url("../pics/daybg.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     display: flex;
     flex-direction: column;
