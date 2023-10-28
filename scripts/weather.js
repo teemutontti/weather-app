@@ -75,9 +75,7 @@ async function fetchWeather(city) {
     let data = await hr.json();
     let dataObj = parsedData(data);
 
-    updateToday(dataObj.today);
-    updateTomorrow(dataObj.tomorrow);
-    updateDayAfter(dataObj.dayAfter);
+    updateData(dataObj);
 
     setAfterSearchStyle();
 }
