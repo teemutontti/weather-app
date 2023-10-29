@@ -57,6 +57,20 @@ body {
             align-items: center;
             justify-content: center;
             border-radius: 5px;
+
+            #field {
+                color: $main-color-3;
+                border-color: $main-color-3;
+                &::placeholder {
+                    color: $main-color-3;
+                }
+            }
+
+            button {
+                .material-symbols-outlined {
+                    color: $main-color-3;
+                }
+            }
         }
     }
 
