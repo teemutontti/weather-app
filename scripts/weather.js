@@ -154,7 +154,12 @@ function setAfterSearchStyle() {
 
     document.querySelector("body").style.display = "block";
     document.querySelector("body").classList.add("search-done");
+    document.querySelector("body").style.backgroundColor = "#f6f1f1";
 
-    document.querySelector("header").style.background = "none";
-    document.querySelector("header").style.paddingBottom = "0px";
+    document.querySelector("header h1").style.color = "#146c94";
+    document.querySelector("header .search #field").style.color = "#146c94";
+    document.querySelector("header .search #field").style.borderColor = "#146c94";
+    document.querySelector("header .search button .material-symbols-outlined").style.color = "#146c94";
+
+    document.querySelector("footer").style.visibility = "visible";
 }
