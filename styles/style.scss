@@ -82,16 +82,24 @@ body {
                 box-shadow: 3.5px 3.5px 2px rgba(0, 0, 0, 0.5);
                 border: 2px solid rgba(255, 255, 255, 0.35);
                 position: relative;
-                background-color: $main-color-4;
-                background: linear-gradient(
-                    0deg,
-                    rgba(20, 108, 148, 1) 28%,
-                    rgba(25, 167, 206, 1) 70%,
-                    rgba(175, 211, 226, 1) 100%
-                );
                 max-width: 400px;
-                margin: 30px auto; // Auto centers the element
-                border-radius: 20px;
+                margin: 20px auto; // Auto centers the element
+                border-radius: 22px 22px 20px 20px;
+
+                .background {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background-image: url("../pics/daybg-2.jpg");
+                    //background-image: url("../pics/nightbg-2.jpg");
+                    background-position: left;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-attachment:initial;
+                    background-position-y: bottom;
+                    border-radius: 20px;
+                    z-index: -1;
+                }
 
                 //styling for temperature unit toggle switch
                 .slider {
