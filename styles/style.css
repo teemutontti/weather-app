@@ -274,7 +274,7 @@ body footer p {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     align-items: center;
-    margin-top: 30px;
+    padding: 30px;
   }
   .search-done header h1 {
     grid-column: 1/2;
