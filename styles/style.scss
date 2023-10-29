@@ -285,11 +285,12 @@ body {
     }
 
     footer {
+        visibility: hidden;
         background-color: $main-color-1;
         padding: 20px;
         color: $main-color-4;
         text-align: left;
-        position: absolute;
+        position: sticky;
         bottom: 0px;
         width: 100%;
         margin: 0;
