@@ -180,6 +180,7 @@ body {
                     h2 {
                         padding-top: 20px;
                         margin-bottom: 0;
+                        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
                     }
 
                     .main-view {
@@ -192,6 +193,7 @@ body {
                             display: flex;
                             flex-direction: row;
                             align-items: center;
+                            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 
                             .temperature {
                                 font-size: 9em;
