@@ -79,6 +79,8 @@ body {
         .container {
             margin: 0px 7%;
             .weather {
+                box-shadow: 3.5px 3.5px 2px rgba(0, 0, 0, 0.5);
+                border: 2px solid rgba(255, 255, 255, 0.35);
                 position: relative;
                 background-color: $main-color-4;
                 background: linear-gradient(
