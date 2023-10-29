@@ -22,10 +22,13 @@ body {
     height: 100vh;
     margin: 0px;
     @extend %base-text-style;
+
     header {
         background-color: $main-color-3;
-        padding-bottom: 35px;
+        padding: 35px 0px;
+        margin-bottom: 40px;
         @extend %header-style;
+
         .search {
             @extend %search-bar-style-2;
             height: 35px;
