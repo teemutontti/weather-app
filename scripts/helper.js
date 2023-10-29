@@ -37,9 +37,9 @@ function isDay(dataObject) {
 function changeBackground(isDay) {
     //Change website background if its day or night
     if (isDay) {
-        document.body.style.backgroundImage = "url(./pics/daybg.webp)";
+        document.querySelector(".weather .background").style.backgroundImage = "url(./pics/daybg-2.jpg)";
     } else {
-        document.body.style.backgroundImage = "url(./pics/nightbg.webp)";
+        document.querySelector(".weather .background").style.backgroundImage = "url(./pics/nightbg-2.jpg)";
     }
 }
 
