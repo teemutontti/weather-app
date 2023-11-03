@@ -161,5 +161,5 @@ function setAfterSearchStyle() {
     document.querySelector("header .search #field").style.borderColor = "#146c94";
     document.querySelector("header .search button .material-symbols-outlined").style.color = "#146c94";
 
-    document.querySelector("footer").style.visibility = "visible";
+    document.querySelector(".link-back").style.visibility = "visible";
 }
