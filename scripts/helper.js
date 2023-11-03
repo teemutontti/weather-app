@@ -37,16 +37,10 @@ function isDay(dataObject) {
 function changeBackground(isDay) {
     //Change website background if its day or night
     if (isDay) {
-        document.querySelector(".weather .background").style.backgroundImage = "url(./pics/daybg-2.jpg)";
+        document.querySelector(".weather .background").style.backgroundImage = "url(./pics/daybg-2.webp)";
     } else {
-        document.querySelector(".weather .background").style.backgroundImage = "url(./pics/nightbg-2.jpg)";
+        document.querySelector(".weather .background").style.backgroundImage = "url(./pics/nightbg-2.webp)";
     }
 }
 
-export {
-    parsedData,
-    formatDate,
-    calcWindSpeedFromKph,
-    isDay,
-    changeBackground,
-};
+export { parsedData, formatDate, calcWindSpeedFromKph, isDay, changeBackground };
