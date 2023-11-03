@@ -279,17 +279,25 @@ body {
     }
 
     footer {
-        visibility: hidden;
-        background-color: $main-color-1;
-        padding: 20px;
-        color: $main-color-4;
-        text-align: left;
-        position: sticky;
-        bottom: 0px;
-        width: 100%;
-        margin: 0;
-        p {
+        .link-back {
+            visibility: hidden;
+            padding: 20px;
+            color: $main-color-1;
+            text-align: center;
+            width: 100%;
             margin: 0;
+            p {
+                margin: 0;
+                a {
+                    color: $main-color-1;
+                    &:visited {
+                        color: $main-color-3;
+                    }
+                    &:active {
+                        color: $main-color-3;
+                    }
+                }
+            }
         }
     }
 }
