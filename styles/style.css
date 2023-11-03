@@ -71,7 +71,7 @@ body .background {
   height: 130%;
   background-image: url("../pics/background.webp");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-attachment: fixed;
   background-position: center top;
   background-color: #19a7ce;
@@ -124,7 +124,7 @@ body main .container .weather .background {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../pics/daybg-2.jpg");
+  background-image: url("../pics/daybg-2.webp");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -282,19 +282,25 @@ body main .container .weather .forecast .day-after .forecast-information-box .ma
 body main .container .weather .forecast .day-after .forecast-information-box .chance-of-rain {
   margin: 0px;
 }
-body footer {
+body footer .link-back {
   visibility: hidden;
-  background-color: #f6f1f1;
   padding: 20px;
-  color: #146c94;
-  text-align: left;
-  position: sticky;
-  bottom: 0px;
+  color: #f6f1f1;
+  text-align: center;
   width: 100%;
   margin: 0;
 }
-body footer p {
+body footer .link-back p {
   margin: 0;
+}
+body footer .link-back p a {
+  color: #f6f1f1;
+}
+body footer .link-back p a:visited {
+  color: #19a7ce;
+}
+body footer .link-back p a:active {
+  color: #19a7ce;
 }
 
 @media only screen and (min-width: 350px) {
