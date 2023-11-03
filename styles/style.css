@@ -68,9 +68,8 @@ body {
 body .background {
   position: absolute;
   width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #146c94 0%, #19a7ce 25%, #19a7ce 75%, #19a7ce 100%);
-  background-image: url("../pics/background.jpg");
+  height: 130%;
+  background-image: url("../pics/background.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
